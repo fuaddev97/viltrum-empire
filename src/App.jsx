@@ -21,7 +21,7 @@ function App() {
          <h2>"Viltrumites have conquered thousands of planets.Waged war across hundreds of light years. They rule over the largest empire the universe has ever seen."</h2>
          </div>
        </div>
-      <div>m
+      <div>
         <div className="home-section war-text">
           <h2 className="layer-4">
             <span className="line1">WE WILL HONOR OUR FALLEN</span>
