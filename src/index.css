@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: radial-gradient(
+        circle at top,
+        #111,
+        #0a0a0a 60%,
+        #000
+    );
+    color: #d6d6d6;
+}
+.home.active,
+.members.active,
+.empire.active,
+.conquests.active,
+.battles.active,
+.genetics.active {
+    color: #ffffff;
+}
+
+.home.active::after,
+.members.active::after,
+.empire.active::after,
+.conquests.active::after,
+.battles.active::after,
+.genetics.active::after {
+    width: 100%;
+    box-shadow: 0 0 10px #E50914;
+}
+.title-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    border-left: 2px solid #E50914;
+    padding-left: 10px;
+}
+.empire-label {
+    font-size: 12px;          /* was too small */
+    letter-spacing: 3px;
+    color: #aaaaaa;           /* brighter than before */
+    font-weight: 500;
+    position: relative;
+}
+.main-title {
+    font-family: 'Anton', sans-serif;
+    font-size: 26px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+.header-title img {
+    transition: transform 0.3s ease;
+}
+.header-title:hover img {
+    transform: scale(1.05);
+}
+.header-title:hover .main-title {
+    color: #E50914;
+}
+.home, .members, .empire, .conquests, .battles, .genetics {
+    position: relative;
+    color: #d6d6d6;
+    padding: 0 10px;
+    transition: all 0.3s ease;
+}
+.home::after,
+.members::after,
+.empire::after,
+.conquests::after,
+.battles::after,
+.genetics::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #E50914;
+    transition: width 0.3s ease;
+}
+.home:hover,
+.members:hover,
+.empire:hover,
+.conquests:hover,
+.battles:hover,
+.genetics:hover {
+    color: #ffffff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.home:hover::after,
+.members:hover::after,
+.empire:hover::after,
+.conquests:hover::after,
+.battles:hover::after,
+.genetics:hover::after {
+    width: 100%;
+}
+.home-hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.home-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 10, 10, 0.35);
+}
+.home-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    padding: 0 100px;
+    text-align: center;
+    color: #d6d6d6;
+}
+.home-section {
+    padding: 60px 0;
+    position: relative;
+}
+.layer-3 {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 90px;
+    line-height: 1.1;
+    letter-spacing: 3px;
+    z-index: 100;
+}
+
+.layer-3 span:first-child {
+    color: #b5b3b3;
+}
+
+.layer-3 span:last-child {
+    color: #E50914;
+    text-shadow: 0 0 15px rgba(229, 9, 20, 0.6);
+}
+.war-text {
+    text-align: center;
+}
+.layer-4 span {
+    display: block;
+    margin: 100px 0;
+}
+.layer-4 {
+    width: 85%;
+    margin: 350px auto 200px;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 80px;
+    line-height: 1.1;
+    letter-spacing: 2px;
+}
+.empire-visual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 200px;
+}
+.viltrum-lineup-img {
+    width: 700px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.8);
+}
+.quotes-section {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+.emperor-argal-quote,
+.coalition-quote {
+    width: 500px;
+    padding: 40px;
+    font-size: 25px;
+    line-height: 1.8;
+    background: linear-gradient(145deg, #0d0d0d, #1c1c1c);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.08);;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.9), inset 0 0 30px rgba(255,255,255,0.02);
+    position: relative;
+    margin: 150px auto;
+    font-family: 'Poppins', sans-serif;
+    color: #d6d6d6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.emperor-argal-quote::before,
+.coalition-quote::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 120px;
+    height: 3px;
+    background: #E50914;
+    border-radius: 2px;
+}
+.emperor-argal-quote:hover, .coalition-quote:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.8),
+        inset 0 0 25px rgba(255, 255, 255, 0.04);
+}
+.final-section {
+    text-align: center;
+}
+.line1 {
+    color: #A0A0A0; /* mourning */
+}
+
+.line2 {
+    color: #FFFFFF; /* resolve */
+}
+
+.line3 {
+    color: #000000; /* deep red */
+    text-shadow: 0 0 20px #908d8d;;
+}
+.homequote-one {
+    max-width: 500px;
+    margin-left: 100px;
+    border-left: 6px solid #8B0000;
+    animation: fadeIn 2s ease 0.5s forwards;
+    padding-left: 20px;
+}
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+.span-1, .span-2, .span-3 {
+    max-width: 500px;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    line-height: 1.6;
+    color: #635b5b;
+    opacity: 0;
+}
+.span-1 {
+    animation: fadeIn 2s ease 0.3s forwards;
+}
+.span-2 {
+    animation: fadeIn 2s ease 0.6s forwards;
+}
+.span-3 {
+    animation: fadeIn 2s ease 0.9s forwards;
+}
+.viltrum-lineup-img {
+    width: 800px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: block;
+}
+.character-strip {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 60px;
+    margin: 50px 0;
+}
+.character-strip img {
+    height: 520px;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.9));
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    box-shadow: #0a0a0a 0px 20px 50px, inset 0 0 30px #0a0a0a;
+}
+
+.character-strip img:hover {
+    transform: scale(1.08);
+}
+.footer-line {
+    width: 80%;
+    height: 1px;
+    background-color: #888888;
+    margin: 150px auto 0;
+}
+.designed-by {
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding-right: 130px;
+    margin-bottom: 20px;
+    color: #888888;
+    margin-top: 10px;
+}

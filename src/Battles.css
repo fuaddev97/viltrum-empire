@@ -1,0 +1,116 @@
+.battles-heading {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+.battles-wallpaper {
+    width: 110%;
+    height: 110%;
+    object-fit: cover;
+    transition: transform 1.0s ease;
+}
+.battles-heading:hover .battles-wallpaper {
+    transform: scale(1.05);
+}
+.battles-heading::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        circle at center,
+        rgba(0,0,0,0.75) 0%,
+        rgba(0,0,0,0.6) 40%,
+        rgba(0,0,0,0.85) 100%
+    );
+}
+.battles-overlay {
+    font-family: 'Anton', sans-serif;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}
+.battles-quote {
+    font-size: 64px;
+    letter-spacing: 3px;
+    color: #ffffffaf;
+    max-width: 800px;
+    line-height: 1.2;
+    text-shadow: 0 0 10px rgba(0,0,0,0.8), 0 0 25px rgba(0,0,0,0.6), 0 0 40px rgba(0,0,0,0.5);
+    transition: transform 1.0s ease;
+}
+.battle-video {
+    width: 500px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+    filter: brightness(0.8);
+    transition: 0.3s ease;
+    box-shadow: 0 10px 40px rgba(50, 49, 49, 0.7);
+}
+.battle-video iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.battle-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 120px 50px;
+}
+.battle-entry:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.battle-info {
+    position: relative;
+    width: 40%;
+    padding: 25px;
+    background: linear-gradient(145deg, #111, #1a1a1a);
+    border-radius: 12px;
+}
+.battle-info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 90px;
+    height: 3px;
+    background: #E50914;
+}
+.battle-video:hover {
+    filter: brightness(1.05);
+    transform: scale(1.05);
+}
+.video-thumbnail {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    overflow: hidden;
+}
+.video-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.9);
+    display: block;
+    border-radius: 12px;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white;
+    background: rgba(0,0,0,0.6);
+    border-radius: 50%;
+    padding: 15px 20px;
+}
