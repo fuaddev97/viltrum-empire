@@ -38,6 +38,12 @@ body {
     width: 100%;
     box-shadow: 0 0 10px #E50914;
 }
+.home-content-line {
+    width: 60%;
+    height: 1px;
+    background: linear-gradient(to right, transparent,rgba(255,255,255,0.3),transparent);
+    margin: 100px auto 40px;
+}
 .title-text {
     display: flex;
     flex-direction: column;
@@ -169,7 +175,7 @@ body {
 }
 .layer-4 {
     width: 85%;
-    margin: 350px auto 200px;
+    margin: 100px auto 200px;
     text-align: center;
     font-family: 'Anton', sans-serif;
     font-size: 80px;
