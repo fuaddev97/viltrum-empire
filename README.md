@@ -1,16 +1,45 @@
-# React + Vite
+# 🛡️ Viltrum Empire Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A visually immersive React application inspired by the Viltrum Empire from *Invincible*.  
+This project explores the empire’s ideology, members, conquests, battles, and genetics through a cinematic, multi-page web experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
+👉 (---)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📌 Features
 
-## Expanding the ESLint configuration
+- 🔥 Multi-page layout using React Router
+- 🎬 Cinematic hero sections with overlays
+- 🧩 Component-based architecture
+- 🎯 Interactive member cards with detailed views
+- 📺 Battle sections featuring video content
+- 🎨 Custom UI design with modern CSS
+- 📱 Responsive layout for different screen sizes
+- ⚡ Smooth navigation and user experience
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🗂️ Pages Overview
+
+- **Home** – Introduction to the Viltrum Empire with immersive visuals  
+- **Members** – Key Viltrumite characters with interactive cards  
+- **Empire** – Ideology and philosophy of the empire  
+- **Conquests** – Notable planetary conquests and expansion  
+- **Battles** – Major battles presented with video highlights  
+- **Genetics** – Overview of Viltrumite biology and traits  
+
+---
+
+## 🛠️ Tech Stack
+
+- **React**
+- **React Router**
+- **CSS (Custom Styling)**
+- **Swiper.js** (for sliders)
+- **JavaScript (ES6+)**
+
+---
