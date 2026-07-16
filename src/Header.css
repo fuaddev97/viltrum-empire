@@ -143,6 +143,8 @@
     .header-content {
         width: 65%;
         font-size: 2.8rem;
+    }.home:hover, .members:hover, .empire:hover, .conquests:hover, .battles:hover, .genetics:hover {
+        font-size: 3rem;
     }
 }
 @media (max-width: 2200px) {
@@ -175,6 +177,9 @@
         width: 63%;
         font-size: 2rem;
     }
+    .home:hover, .members:hover, .empire:hover, .conquests:hover, .battles:hover, .genetics:hover {
+        font-size: 2.2rem;
+    }
 }
 @media (max-width: 1600px) {
     .header {
@@ -193,6 +198,9 @@
     .header-content {
         font-size: 1.6rem;
     }
+    .home:hover, .members:hover, .empire:hover, .conquests:hover, .battles:hover, .genetics:hover {
+        font-size: 1.8rem;
+    }
 }
 @media (max-width: 1300px) {
     .empire-label {
@@ -208,6 +216,9 @@
     .header-content {
         width: 62%;
         font-size: 1.3rem;
+    }
+    .home:hover, .members:hover, .empire:hover, .conquests:hover, .battles:hover, .genetics:hover {
+        font-size: 1.5rem;
     }
     .home::after, .members::after, .empire::after, .conquests::after, .battles::after, .genetics::after {
         height: 3px;
@@ -233,6 +244,9 @@
     .header-content {
         font-size: 1rem;
     }
+    .home:hover, .members:hover, .empire:hover, .conquests:hover, .battles:hover, .genetics:hover {
+        font-size: 1.2rem;
+    }
 }
 @media (max-width: 900px) {
     .header {
@@ -250,6 +264,9 @@
     }
     .header-content {
         font-size: 0.9rem;
+    }
+    .home:hover, .members:hover, .empire:hover, .conquests:hover, .battles:hover, .genetics:hover {
+        font-size: 1.1rem;
     }
     .home, .members, .empire, .conquests, .battles, .genetics {
         padding: 0 9px;
@@ -280,6 +297,9 @@
         width: 60%;
         font-size: 0.75rem;
     }
+    .home:hover, .members:hover, .empire:hover, .conquests:hover, .battles:hover, .genetics:hover {
+        font-size: 0.95rem;
+    }
     .home, .members, .empire, .conquests, .battles, .genetics {
         padding: 0 8px;
     }
@@ -303,6 +323,9 @@
     }
     .header-content {
         font-size: 0.65rem;
+    }
+    .home:hover, .members:hover, .empire:hover, .conquests:hover, .battles:hover, .genetics:hover {
+        font-size: 0.85rem;
     }
     .home, .members, .empire, .conquests, .battles, .genetics {
         padding: 0 7px;
@@ -335,6 +358,9 @@
     }
     .home, .members, .empire, .conquests, .battles, .genetics {
         padding: 0 5px;
+    }
+    .home:hover, .members:hover, .empire:hover, .conquests:hover, .battles:hover, .genetics:hover {
+        font-size: 0.7rem;
     }
     .home::after, .members::after, .empire::after, .conquests::after, .battles::after, .genetics::after {
         height: 2px;
@@ -387,6 +413,9 @@
     }
     .header-content {
         font-size: 0.3rem;
+    }
+    .home:hover, .members:hover, .empire:hover, .conquests:hover, .battles:hover, .genetics:hover {
+        font-size: 0.5rem;
     }
     .home, .members, .empire, .conquests, .battles, .genetics {
         padding: 0 3px;
