@@ -1,14 +1,10 @@
-import { useState } from 'react'
-import { useEffect } from "react";
 import viltrumWallpaper from './assets/viltrum-wp.jpg'
-import viltrumLineup from './assets/viltrum-lineup.png'
-import thraggSitting from './assets/thragg-sitting.jpg'
+import viltrumLineup from './assets/viltrum-lineup.webp'
 import thraggLook from './assets/thragg-look.jpg'
 import anessa from './assets/anessa-pose.jpg'
-import conquestBlood from './assets/conquest-drenched-in-blood.png'
-import thraggPose from './assets/thragg-pose-space.png'
-import { Link } from 'react-router-dom'
+import conquestBlood from './assets/conquest-drenched-in-blood.webp'
 import Header from './Header'
+import Footer from './Footer'
 
 function App() {
 
@@ -16,7 +12,7 @@ function App() {
     <>
       <Header />
        <div className="home-hero">
-         <img src={viltrumWallpaper} />
+         <img src={viltrumWallpaper} alt="" />
          <div className="home-overlay">
          <h2>"Viltrumites have conquered thousands of planets.Waged war across hundreds of light years. They rule over the largest empire the universe has ever seen."</h2>
          </div>
@@ -49,8 +45,7 @@ function App() {
           </h2>
         </div>
       </div>
-      <div className='footer-line'></div>
-      <div className='designed-by'>DESIGNED BY: Fuad</div>
+    <Footer />
     </>
   );
 }

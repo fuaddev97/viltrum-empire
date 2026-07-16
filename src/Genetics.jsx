@@ -1,12 +1,7 @@
-import { useState, useEffect } from "react";
-import Swiper from "swiper";
-import { Navigation, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 import geneticsWallpaper from "./assets/genetics-wp.jpg";
 import Header from "./Header";
 import "./Genetics.css";
+import Footer from './Footer'
 
 export default function Genetics () {
     return(
@@ -20,7 +15,7 @@ export default function Genetics () {
             </div>
         </div>
         <div className="genetics-intro">
-             <p> Viltrumite biology is not an accident of evolution. It is refinement through survival. Every weakness was removed. Every limitation erased. What remains is the dominant lifeform of the known universe.</p>
+             <p> <span>Viltrumite biology is not an accident of evolution. It is refinement through survival.</span><span>Every weakness was removed. Every limitation erased. What remains is the dominant lifeform of the known universe.</span></p>
         </div>
         <div className="genetics-grid">
             <div className="trait-card">
@@ -70,6 +65,7 @@ export default function Genetics () {
         <div className="genetics-final">
           <p>This is not evolution. This is inevitability. The universe does not shape us— we shape what survives within it.</p>
         </div>
+        <Footer />
        </>
     );
 }

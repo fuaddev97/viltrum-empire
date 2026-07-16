@@ -19,7 +19,7 @@ import Vidor from "./Vidor";
 import Elix from "./Elix";
 import Executioners from "./Executioners";
 import argallPropic from "./assets/argall-propic.jpg"
-import argallImg1 from "./assets/argall-img-1.png"
+import argallImg1 from "./assets/argall-img-1.webp"
 import argallImg2 from "./assets/argall-img-2.jpg"
 import argallImg3 from "./assets/argall-img-3.jpg"
 import thraggPropic from "./assets/thragg-propic.jpg"
@@ -67,14 +67,9 @@ import executionersImg1 from "./assets/executioners-img-1.jpg"
 import executionersImg2 from "./assets/executioners-img-2.jpg"
 import executionersImg3 from "./assets/executioners-img-3.jpg"
 import "./Members.css"
+import Footer from './Footer'
 
 export default function Members() {
-    const [imageOne, setImageOne] = useState(null);
-    const [imageTwo, setImageTwo] = useState(null);
-    const [imageThree, setImageThree] = useState(null);
-    const [imageFour, setImageFour] = useState(null);
-    const [memberParagraph, setMemberParagraph] = useState("");
-    const [memberName, setMemberName] = useState("");
     const argallParagraph = "Emperor Argall was not merely a ruler—he was the one who revealed what it meant to be Viltrumite. Before him, we possessed strength. Through him, we understood its purpose. He did not grant us power; he showed us how to wield it without hesitation, without weakness.";
     const thraggParagraph = "Thragg, the Grand Champion of the Viltrum Empire, embodies the pinnacle of our might. His unmatched combat prowess and strategic brilliance have made him a legend among our ranks. Thragg's victories in countless battles have solidified his status as a symbol of our strength and resilience.";
     const kreggParagraph = "Kregg, the relentless enforcer of the Viltrum Empire, is a force to be reckoned with. His unwavering loyalty and brutal efficiency in executing the empire's will have earned him a fearsome reputation. Kregg's presence on the battlefield strikes fear into the hearts of our enemies, making him an indispensable asset to our cause.";
@@ -87,117 +82,26 @@ export default function Members() {
     const vidorParagraph = "Vidor, the cunning tactician of the Viltrum Empire, is a master of strategy and deception. His brilliant mind and tactical genius have led to countless victories for our empire. Vidor's ability to outmaneuver our enemies and anticipate their moves has made him an invaluable asset to our military campaigns, solidifying his place among the elite members of our forces.";
     const elixParagraph = "Elix, the relentless warrior of the Viltrum Empire, is a symbol of our unyielding strength and resilience. His unwavering dedication to our cause and his unparalleled combat skills have made him a formidable opponent. Elix's unwavering resolve and unyielding spirit inspire all who fight alongside him, making him an invaluable member of our forces.";
     const executionersParagraph = "The Executioners, the elite enforcers of the Viltrum Empire, are a force to be reckoned with. Their unwavering loyalty and ruthless efficiency in executing the empire's will have earned them a fearsome reputation. The Executioners' presence on the battlefield strikes fear into the hearts of our enemies, making them an indispensable asset to our cause.";
-    
-    const [showCard, setShowCard] = useState(false);
-    const handleOpenArgall = () => {
-      setImageOne(argallPropic);
-      setImageTwo(argallImg1);
-      setImageThree(argallImg2);
-      setImageFour(argallImg3);
-      setMemberParagraph(argallParagraph);
-      setMemberName("Emperor Argall");
-      setShowCard(true);
-    };
-    const handleOpenThragg = () => {
-      setImageOne(thraggPropic);
-      setImageTwo(thraggImg1);
-      setImageThree(thraggImg2);
-      setImageFour(thraggImg3);
-      setMemberParagraph(thraggParagraph);
-      setMemberName("Grand Regent Thragg");
-      setShowCard(true);
-    }
-    const handleOpenKregg = () => {
-      setImageOne(kreggPropic);
-      setImageTwo(kreggImg1);
-      setImageThree(kreggImg2);
-      setImageFour(kreggImg3);
-      setMemberParagraph(kreggParagraph);
-      setMemberName("General Kregg");
-      setShowCard(true);
-    }
-    const handleOpenAnessa = () => {
-      setImageOne(anessaPropic);
-      setImageTwo(anessaImg1);
-      setImageThree(anessaImg2);
-      setImageFour(anessaImg3);
-      setMemberParagraph(anessaParagraph);
-      setMemberName("Anessa");
-      setShowCard(true);
-    }
-    const handleOpenLucan = () => {
-      setImageOne(lucanPropic);
-      setImageTwo(lucanImg1);
-      setImageThree(lucanImg2);
-      setImageFour(lucanImg3);
-      setMemberParagraph(lucanParagraph);
-      setMemberName("Lucan");
-      setShowCard(true);
-    }
-    const handleOpenConquest = () => {
-      setImageOne(conquestPropic);
-      setImageTwo(conquestImg1);
-      setImageThree(conquestImg2);
-      setImageFour(conquestImg3);
-      setMemberParagraph(conquestParagraph);
-      setMemberName("Conquest");
-      setShowCard(true);
-    }
-    const handleOpenThula = () => {
-      setImageOne(thulaPropic);
-      setImageTwo(thulaImg1);
-      setImageThree(thulaImg2);
-      setImageFour(thulaImg3);
-      setMemberParagraph(thulaParagraph);
-      setMemberName("Thula");
-      setShowCard(true);
-    }
-    const handleOpenNolan = () => {
-      setImageOne(nolanPropic);
-      setImageTwo(nolanImg1);
-      setImageThree(nolanImg2);
-      setImageFour(nolanImg3);
-      setMemberParagraph(nolanParagraph);
-      setMemberName("Nolan");
-      setShowCard(true);
-    }
-    const handleOpenKradd = () => {
-      setImageOne(kraddPropic);
-      setImageTwo(kraddImg1);
-      setImageThree(kraddImg2);
-      setImageFour(kraddImg3);
-      setMemberParagraph(kraddParagraph);
-      setMemberName("Kradd");
-      setShowCard(true);
-    }
-    const handleOpenVidor = () => {
-      setImageOne(vidorPropic);
-      setImageTwo(vidorImg1);
-      setImageThree(vidorImg2);
-      setImageFour(vidorImg3);
-      setMemberParagraph(vidorParagraph);
-      setMemberName("Vidor");
-      setShowCard(true);
-    }
-    const handleOpenElix = () => {
-      setImageOne(elixPropic);
-      setImageTwo(elixImg1);
-      setImageThree(elixImg2);
-      setImageFour(elixImg3);
-      setMemberParagraph(elixParagraph);
-      setMemberName("Elix");
-      setShowCard(true);
-    }
-    const handleOpenExecutioners = () => {
-      setImageOne(executionersPropic);
-      setImageTwo(executionersImg1);
-      setImageThree(executionersImg2);
-      setImageFour(executionersImg3);
-      setMemberParagraph(executionersParagraph);
-      setMemberName("The Executioners");
-      setShowCard(true);
-    }
-    
+
+    // Each member's card component + modal images/copy live in one place instead of
+    // a separate useState slot and handleOpenX function per character.
+    const members = [
+      { key: "argall", name: "Emperor Argall", Card: Argall, propic: argallPropic, img1: argallImg1, img2: argallImg2, img3: argallImg3, paragraph: argallParagraph },
+      { key: "thragg", name: "Grand Regent Thragg", Card: Thragg, propic: thraggPropic, img1: thraggImg1, img2: thraggImg2, img3: thraggImg3, paragraph: thraggParagraph },
+      { key: "kregg", name: "General Kregg", Card: Kregg, propic: kreggPropic, img1: kreggImg1, img2: kreggImg2, img3: kreggImg3, paragraph: kreggParagraph },
+      { key: "anessa", name: "Anessa", Card: Anessa, propic: anessaPropic, img1: anessaImg1, img2: anessaImg2, img3: anessaImg3, paragraph: anessaParagraph },
+      { key: "conquest", name: "Conquest", Card: Conquest, propic: conquestPropic, img1: conquestImg1, img2: conquestImg2, img3: conquestImg3, paragraph: conquestParagraph },
+      { key: "thula", name: "Thula", Card: Thula, propic: thulaPropic, img1: thulaImg1, img2: thulaImg2, img3: thulaImg3, paragraph: thulaParagraph },
+      { key: "lucan", name: "Lucan", Card: Lucan, propic: lucanPropic, img1: lucanImg1, img2: lucanImg2, img3: lucanImg3, paragraph: lucanParagraph },
+      { key: "nolan", name: "Nolan", Card: Nolan, propic: nolanPropic, img1: nolanImg1, img2: nolanImg2, img3: nolanImg3, paragraph: nolanParagraph },
+      { key: "kradd", name: "Kradd", Card: Kradd, propic: kraddPropic, img1: kraddImg1, img2: kraddImg2, img3: kraddImg3, paragraph: kraddParagraph },
+      { key: "vidor", name: "Vidor", Card: Vidor, propic: vidorPropic, img1: vidorImg1, img2: vidorImg2, img3: vidorImg3, paragraph: vidorParagraph },
+      { key: "elix", name: "Elix", Card: Elix, propic: elixPropic, img1: elixImg1, img2: elixImg2, img3: elixImg3, paragraph: elixParagraph },
+      { key: "executioners", name: "The Executioners", Card: Executioners, propic: executionersPropic, img1: executionersImg1, img2: executionersImg2, img3: executionersImg3, paragraph: executionersParagraph },
+    ];
+
+    const [selectedMember, setSelectedMember] = useState(null);
+    const showCard = selectedMember !== null;
 
   useEffect(() => {
     const swiper = new Swiper('.swiper', {
@@ -227,38 +131,30 @@ export default function Members() {
             <p className="members-intro">Each Viltrumite is forged through conquest, defined by strength, and bound by purpose.</p>
             <div className="members-section">
           <div className="members-content-line"></div>
-          <div className="overlay" style={{ display: showCard ? "block" : "none" }} onClick={() => setShowCard(false)}>
+          <div className="overlay" style={{ display: showCard ? "block" : "none" }} onClick={() => setSelectedMember(null)}>
           <div className="clicked-card" style={{ display: showCard ? "flex" : "none" }} onClick={(e) => e.stopPropagation()}>
             <div className="swiper">
               <div className="swiper-wrapper">
-                <div className="swiper-slide"><img src={imageOne} alt="Propic" /></div>
-                <div className="swiper-slide"><img src={imageTwo} alt="Image One" /></div>
-                <div className="swiper-slide"><img src={imageThree} alt="Image Two" /></div>
-                <div className="swiper-slide"><img src={imageFour} alt="Image Three" /></div>
+                <div className="swiper-slide"><img src={selectedMember?.propic} alt="Propic" /></div>
+                <div className="swiper-slide"><img src={selectedMember?.img1} alt="Image One" /></div>
+                <div className="swiper-slide"><img src={selectedMember?.img2} alt="Image Two" /></div>
+                <div className="swiper-slide"><img src={selectedMember?.img3} alt="Image Three" /></div>
               </div>
               <div className="swiper-pagination"></div>
               <div className="swiper-button-prev"></div>
               <div className="swiper-button-next"></div>
             </div>
-            <h2 className="member-name">{memberName}</h2>
-            <p>{memberParagraph}</p>
+            <h2 className="member-name">{selectedMember?.name}</h2>
+            <p>{selectedMember?.paragraph}</p>
           </div>
           </div>
           <div className="members-grid">
-              <Argall onClick={handleOpenArgall} />
-              <Thragg onClick={handleOpenThragg} />
-              <Kregg onClick={handleOpenKregg} />
-              <Anessa onClick={handleOpenAnessa} />
-              <Conquest onClick={handleOpenConquest} />
-              <Thula onClick={handleOpenThula} />
-             <Lucan onClick={handleOpenLucan} />
-              <Nolan onClick={handleOpenNolan} />
-             <Kradd onClick={handleOpenKradd} />
-              <Vidor onClick={handleOpenVidor} />
-              <Elix onClick={handleOpenElix} />
-              <Executioners onClick={handleOpenExecutioners} />
+              {members.map((member) => (
+                <member.Card key={member.key} onClick={() => setSelectedMember(member)} />
+              ))}
               </div>
           </div>
+          <Footer />
         </>
     );
 }

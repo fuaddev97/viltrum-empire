@@ -1,12 +1,7 @@
-import { useState, useEffect } from "react";
-import Swiper from "swiper";
-import { Navigation, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import { useState } from "react";
 import Header from "./Header";
 import "./Battles.css";
-import battlesWallpaper from "./assets/battles-wp.png";
+import battlesWallpaper from "./assets/battles-wp.webp";
 import battlesImg1 from "./assets/battles-img-1.jpg";
 import battlesImg2 from "./assets/battles-img-2.jpg";
 import battlesImg3 from "./assets/battles-img-3.jpg";
@@ -14,6 +9,7 @@ import battlesImg4 from "./assets/battles-img-4.jpg";
 import battlesImg5 from "./assets/battles-img-5.jpg";
 import battlesImg6 from "./assets/battles-img-6.jpg";
 import battlesImg7 from "./assets/battles-img-7.jpg";
+import Footer from './Footer'
 
 
 export default function Battles () {
@@ -38,7 +34,7 @@ export default function Battles () {
            <div className="battle-timeline">
                 <div className="battle-entry">
                     <div className="battle-video" onClick={() => setPlayOne(true)}>
-                         {playOne ? (<iframe src="https://www.youtube.com/embed/o0TlCQC_ljw" title="Omni-Man vs Invincible" allowFullScreen></iframe>) : (<div className="video-thumbnail"><img src={battlesImg1} /><div className="play-button">▶</div></div>)}
+                         {playOne ? (<iframe src="https://www.youtube.com/embed/o0TlCQC_ljw" title="Omni-Man vs Invincible" allowFullScreen></iframe>) : (<div className="video-thumbnail"><img src={battlesImg1} alt="Omni-Man vs The Guardians of the Globe" loading="lazy" decoding="async" /><div className="play-button">▶</div></div>)}
                     </div>
                     <div className="battle-info">
                         <span className="battle-tag">False Guardians Fall</span>
@@ -49,7 +45,7 @@ export default function Battles () {
 
                 <div className="battle-entry">
                     <div className="battle-video" onClick={() => setPlayTwo(true)}>
-                         {playTwo ? (<iframe src="https://www.youtube.com/embed/Ru4owY1Mu0Q" title="Omni-Man vs The Flaxans" allowFullScreen></iframe>) : (<div className="video-thumbnail"><img src={battlesImg2} /><div className="play-button">▶</div></div>)}
+                         {playTwo ? (<iframe src="https://www.youtube.com/embed/Ru4owY1Mu0Q" title="Omni-Man vs The Flaxans" allowFullScreen></iframe>) : (<div className="video-thumbnail"><img src={battlesImg2} alt="Omni-Man vs The Flaxans" loading="lazy" decoding="async" /><div className="play-button">▶</div></div>)}
                     </div>
                     <div className="battle-info">
                         <span className="battle-tag">Imperial Retribution</span>
@@ -60,7 +56,7 @@ export default function Battles () {
 
                 <div className="battle-entry">
                     <div className="battle-video" onClick={() => setPlayThree(true)}>
-                         {playThree ? (<iframe src="https://www.youtube.com/embed/uykT_rA4TcA" title="Omni-Man vs The Immortal 2" allowFullScreen></iframe>) : (<div className="video-thumbnail"><img src={battlesImg3} /><div className="play-button">▶</div></div>)}
+                         {playThree ? (<iframe src="https://www.youtube.com/embed/uykT_rA4TcA" title="Omni-Man vs The Immortal 2" allowFullScreen></iframe>) : (<div className="video-thumbnail"><img src={battlesImg3} alt="Omni-Man vs The Immortal 2" loading="lazy" decoding="async" /><div className="play-button">▶</div></div>)}
                     </div>
                     <div className="battle-info">
                         <span className="battle-tag">Defiance Silenced</span>
@@ -71,7 +67,7 @@ export default function Battles () {
 
                 <div className="battle-entry">
                     <div className="battle-video" onClick={() => setPlayFour(true)}>
-                         {playFour ? (<iframe src="https://www.youtube.com/embed/R7N_dKZyetI" title="Omni-Man vs Invincible" allowFullScreen></iframe>) : (<div className="video-thumbnail"><img src={battlesImg4} /><div className="play-button">▶</div></div>)}
+                         {playFour ? (<iframe src="https://www.youtube.com/embed/R7N_dKZyetI" title="Omni-Man vs Invincible" allowFullScreen></iframe>) : (<div className="video-thumbnail"><img src={battlesImg4} alt="Omni-Man vs Invincible" loading="lazy" decoding="async" /><div className="play-button">▶</div></div>)}
                     </div>
                     <div className="battle-info">
                         <span className="battle-tag">The Lesson of Blood</span>
@@ -82,7 +78,7 @@ export default function Battles () {
 
                 <div className="battle-entry">
                     <div className="battle-video" onClick={() => setPlayFive(true)}>
-                         {playFive ? (<iframe src="https://www.youtube.com/embed/sJ71qfDqVsY" title="Battle of Thraxa" allowFullScreen></iframe>) : (<div className="video-thumbnail"><img src={battlesImg5} /><div className="play-button">▶</div></div>)}
+                         {playFive ? (<iframe src="https://www.youtube.com/embed/sJ71qfDqVsY" title="Battle of Thraxa" allowFullScreen></iframe>) : (<div className="video-thumbnail"><img src={battlesImg5} alt="The Battle of Thraxa" loading="lazy" decoding="async" /><div className="play-button">▶</div></div>)}
                     </div>
                     <div className="battle-info">
                         <span className="battle-tag">Punishment for Treason</span>
@@ -93,7 +89,7 @@ export default function Battles () {
 
                 <div className="battle-entry">
                     <div className="battle-video" onClick={() => setPlaySix(true)}>
-                         {playSix ? (<iframe src="https://www.youtube.com/embed/za5OgFZsUds" title="Conquest vs Invincible" allowFullScreen></iframe>) : (<div className="video-thumbnail"><img src={battlesImg6} /><div className="play-button">▶</div></div>)}
+                         {playSix ? (<iframe src="https://www.youtube.com/embed/za5OgFZsUds" title="Conquest vs Invincible" allowFullScreen></iframe>) : (<div className="video-thumbnail"><img src={battlesImg6} alt="Conquest vs Invincible" loading="lazy" decoding="async" /><div className="play-button">▶</div></div>)}
                     </div>
                     <div className="battle-info">
                         <span className="battle-tag">Unrestrained Supremacy</span>
@@ -104,7 +100,7 @@ export default function Battles () {
 
                 <div className="battle-entry">
                     <div className="battle-video" onClick={() => setPlaySeven(true)}>
-                         {playSeven ? (<iframe src="https://www.youtube.com/embed/6pqdX8mBruU" title="Thragg vs The Coalition of Planets" allowFullScreen></iframe>) : (<div className="video-thumbnail"><img src={battlesImg7} /><div className="play-button">▶</div></div>)}
+                         {playSeven ? (<iframe src="https://www.youtube.com/embed/6pqdX8mBruU" title="Thragg vs The Coalition of Planets" allowFullScreen></iframe>) : (<div className="video-thumbnail"><img src={battlesImg7} alt="Thragg vs The Coalition of Planets" loading="lazy" decoding="async" /><div className="play-button">▶</div></div>)}
                     </div>
                     <div className="battle-info">
                         <span className="battle-tag">The Empire Tested</span>
@@ -113,7 +109,7 @@ export default function Battles () {
                     </div>
                 </div>
             </div>
-
+            <Footer />
         </>
     );
 }

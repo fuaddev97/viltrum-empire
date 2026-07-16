@@ -20,98 +20,11 @@ body {
     );
     color: #d6d6d6;
 }
-.home.active,
-.members.active,
-.empire.active,
-.conquests.active,
-.battles.active,
-.genetics.active {
-    color: #ffffff;
-}
-
-.home.active::after,
-.members.active::after,
-.empire.active::after,
-.conquests.active::after,
-.battles.active::after,
-.genetics.active::after {
-    width: 100%;
-    box-shadow: 0 0 10px #E50914;
-}
 .home-content-line {
     width: 60%;
     height: 1px;
     background: linear-gradient(to right, transparent,rgba(255,255,255,0.3),transparent);
     margin: 100px auto 40px;
-}
-.title-text {
-    display: flex;
-    flex-direction: column;
-    line-height: 1;
-    border-left: 2px solid #E50914;
-    padding-left: 10px;
-}
-.empire-label {
-    font-size: 12px;          /* was too small */
-    letter-spacing: 3px;
-    color: #aaaaaa;           /* brighter than before */
-    font-weight: 500;
-    position: relative;
-}
-.main-title {
-    font-family: 'Anton', sans-serif;
-    font-size: 26px;
-    letter-spacing: 2px;
-    color: #ffffff;
-}
-.header-title img {
-    transition: transform 0.3s ease;
-}
-.header-title:hover img {
-    transform: scale(1.05);
-}
-.header-title:hover .main-title {
-    color: #E50914;
-}
-.home, .members, .empire, .conquests, .battles, .genetics {
-    position: relative;
-    color: #d6d6d6;
-    padding: 0 10px;
-    transition: all 0.3s ease;
-}
-.home::after,
-.members::after,
-.empire::after,
-.conquests::after,
-.battles::after,
-.genetics::after {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    background: #E50914;
-    transition: width 0.3s ease;
-}
-.home:hover,
-.members:hover,
-.empire:hover,
-.conquests:hover,
-.battles:hover,
-.genetics:hover {
-    color: #ffffff;
-    font-size: 22px;
-    cursor: pointer;
-}
-
-.home:hover::after,
-.members:hover::after,
-.empire:hover::after,
-.conquests:hover::after,
-.battles:hover::after,
-.genetics:hover::after {
-    width: 100%;
 }
 .home-hero {
     position: relative;
@@ -156,8 +69,11 @@ body {
     line-height: 1.1;
     letter-spacing: 3px;
     z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
 }
-
 .layer-3 span:first-child {
     color: #b5b3b3;
 }
@@ -187,11 +103,6 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 200px;
-}
-.viltrum-lineup-img {
-    width: 700px;
-    border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.8);
 }
 .quotes-section {
     display: flex;
@@ -275,7 +186,7 @@ body {
     animation: fadeIn 2s ease 0.9s forwards;
 }
 .viltrum-lineup-img {
-    width: 800px;
+    width: 60rem;
     margin: 0 auto;
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -285,11 +196,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    gap: 60px;
+    gap: 200px;
     margin: 50px 0;
 }
 .character-strip img {
-    height: 520px;
+    height: 32.5rem;
     object-fit: contain;
     filter: drop-shadow(0 20px 40px rgba(0,0,0,0.9));
     transition: transform 0.3s ease;
@@ -300,18 +211,597 @@ body {
 .character-strip img:hover {
     transform: scale(1.08);
 }
-.footer-line {
-    width: 80%;
-    height: 1px;
-    background-color: #888888;
-    margin: 150px auto 0;
+.footer {
+    margin-top: 180px;
+    padding-bottom: 40px;
 }
-.designed-by {
-    text-align: right;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    padding-right: 130px;
-    margin-bottom: 20px;
-    color: #888888;
-    margin-top: 10px;
+.footer-line {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(229, 9, 20, 0.5), transparent);
+}
+.footer-content {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.footer-title {
+    font-family: 'Anton', sans-serif;
+    font-size: 42px;
+    letter-spacing: 4px;
+    color: #dcdcdc;
+}
+.footer-quote {
+    margin-top: 12px;
+    color: #8a8a8a;
+    letter-spacing: 3px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.footer-bottom {
+    margin-top: 50px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    color: #6f6f6f;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.footer-year {
+    opacity: 0.7;
+}
+@media (max-width: 2880px) {
+    .home-overlay h2 {
+        margin-top: 500px;
+        font-size: 40px;
+    }
+    .home-content-line {
+        margin: 400px auto;
+   }
+   .layer-3, .layer-4 {
+        font-size: 160px;
+    }
+    .layer-4 span {
+        margin: 0 auto 700px;
+    }
+    .viltrum-lineup-img {
+        margin: 300px auto;
+        width: 125rem;
+    }
+    .character-strip {
+        margin: 500px 0 50px;
+        gap: 250px;
+    }
+    .character-strip img {
+        height: 60rem;
+    }
+    .emperor-argal-quote, .coalition-quote {
+        width: 750px;
+        padding: 50px;
+        font-size: 45px;
+        line-height: 1.4;
+        border-radius: 50px;
+        margin: 500px auto;
+    }
+    .emperor-argal-quote::before,
+    .coalition-quote::before {
+       width: 180px;
+       height: 5px;
+       left: 50px;
+    }
+    .footer-line {
+        height: 2px;
+    }
+    .footer-title {
+        font-size: 75px;
+    }
+    .footer-quote {
+        font-size: 30px;
+    }
+    .footer-bottom {
+        font-size: 32px;
+    }
+}
+@media (max-width: 2500px) {
+    .home-overlay h2 {
+        font-size: 38px;
+    }
+    .footer-title {
+        font-size: 70px;
+    }
+    .footer-quote {
+        font-size: 28px;
+    }
+    .footer-bottom {
+        font-size: 30px;
+    }
+}
+@media (max-width: 2200px) {
+    .home-overlay h2 {
+        font-size: 35px;
+    }
+   .layer-3, .layer-4 {
+        font-size: 120px;
+    }
+    .layer-4 span {
+        margin: 0 auto 600px;
+    }
+    .viltrum-lineup-img {
+    width: 110rem;
+    }
+    .character-strip img {
+        height: 50rem;
+    }
+}
+@media (max-width: 1900px) {
+    .home-overlay h2 {
+        font-size: 32px;
+    }
+    .viltrum-lineup-img {
+        margin: 0 auto;
+        width: 95rem;
+    }
+    .emperor-argal-quote, .coalition-quote {
+        width: 650px;
+        font-size: 40px;
+        border-radius: 45px;
+    }
+    .footer-title {
+        font-size: 65px;
+    }
+    .footer-quote {
+        font-size: 18px;
+    }
+    .footer-bottom {
+        font-size: 22px;
+    }
+}
+@media (max-width: 1700px) {
+    .viltrum-lineup-img {
+        width: 80rem;
+    }
+    .character-strip {
+        margin: 450px 0 50px;
+    }
+    .character-strip img {
+        height: 40rem;
+    }
+    .emperor-argal-quote, .coalition-quote {
+        border-radius: 40px;
+    }
+}
+@media (max-width: 1500px) {
+    .home-overlay h2 {
+        margin-top: 300px;
+        font-size: 26px;
+    }
+    .home-content-line {
+        margin: 200px auto;
+   }
+   .layer-3, .layer-4 {
+        font-size: 80px;
+    }
+    .layer-4 span {
+        margin: 0 auto 550px;
+    }
+    .viltrum-lineup-img {
+        width: 65rem;
+    }
+    .character-strip {
+        margin: 400px 0 50px;
+    }
+    .character-strip img {
+        height: 30rem;
+    }
+    .emperor-argal-quote, .coalition-quote {
+        width: 400px;
+        padding: 40px;
+        font-size: 24px;
+        border-radius: 25px;
+        margin: 400px auto;
+    }
+    .emperor-argal-quote::before,
+    .coalition-quote::before {
+       width: 140px;
+       height: 3px;
+       left: 40px;
+    }
+    .footer-title {
+        font-size: 50px;
+    }
+    .footer-quote {
+        font-size: 16px;
+    }
+    .footer-bottom {
+        font-size: 20px;
+    }
+
+}
+@media (max-width: 1200px) {
+    .home-overlay h2 {
+        font-size: 22px;
+    }
+    .viltrum-lineup-img {
+        width: 53rem;
+    }
+    .character-strip {
+        margin: 200px 0 50px;
+        gap: 150px;
+    }
+    .character-strip img {
+        height: 25rem;
+    }
+    .layer-4 span {
+        margin: 0 auto 450px;
+    }
+    .emperor-argal-quote, .coalition-quote {
+        width: 320px;
+        padding: 30px;
+        font-size: 19px;
+        border-radius: 20px;
+        margin: 150px auto;
+    }
+    .emperor-argal-quote::before,
+    .coalition-quote::before {
+       width: 120px;
+       height: 2.8px;
+       left: 30px;
+    }
+    .footer-title {
+        font-size: 45px;
+    }
+    .footer-quote {
+        font-size: 15px;
+    }
+    .footer-bottom {
+        font-size: 18px;
+    }
+}
+@media (max-width: 1100px) {
+    .quotes-section {
+        gap: 90px;
+    }
+}
+@media (max-width: 1000px) {
+    .home-overlay h2 {
+        margin-top: 250px;
+        font-size: 16px;
+    }
+    .home-content-line {
+        margin: 100px auto;
+   }
+    .quotes-section {
+        gap: 80px;
+    }
+    .home-hero {
+        height: auto;
+    }
+    .viltrum-lineup-img {
+        width: 48rem;
+    }
+    .emperor-argal-quote, .coalition-quote {
+        width: 280px;
+        padding: 25px;
+        font-size: 16px;
+    }
+    .emperor-argal-quote::before,
+    .coalition-quote::before {
+       width: 100px;
+       height: 2.5px;
+       left: 25px;
+    }
+    .footer-title {
+        font-size: 35px;
+    }
+    .footer-quote {
+        font-size: 14px;
+    }
+    .footer-bottom {
+        margin-top: 40px;
+        font-size: 15px;
+    }
+}
+@media (max-width: 900px) {
+    .quotes-section {
+        gap: 70px;
+    }
+    .viltrum-lineup-img {
+        width: 43rem;
+    }
+    .character-strip {
+        margin: 150px 0 35px;
+    }
+    .character-strip img {
+        height: 20rem;
+    }
+}
+@media (max-width: 800px) {
+    .home-overlay h2 {
+        margin-top: 150px;
+        font-size: 12px;
+    }
+    .home-content-line {
+        margin: 100px auto 80px;
+   }
+    .layer-3, .layer-4 {
+        font-size: 70px;
+    }  
+    .viltrum-lineup-img {
+        width: 38rem;
+    }
+    .character-strip {
+        gap: 120px;
+    }
+    .character-strip img {
+        height: 18rem;
+    }
+    .emperor-argal-quote, .coalition-quote {
+        width: 240px;
+        font-size: 14px;
+    }
+    .emperor-argal-quote::before,
+    .coalition-quote::before {
+       width: 90px;
+    }
+    .footer-title {
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+    .footer-quote {
+        margin-top: 10px;
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+    .footer-bottom {
+        font-size: 12px;
+    }
+}
+@media (max-width: 700px) {
+    .home-overlay h2 {
+        font-size: 10px;
+    }
+    .home-content-line {
+        margin: 130px auto 60px;
+   }
+    .quotes-section {
+       gap: 60px;
+    }
+    .emperor-argal-quote, .coalition-quote {
+        width: 200px;
+        padding: 20px;
+        font-size: 12px;
+        line-height: 1.3;
+    }
+    .emperor-argal-quote::before,
+    .coalition-quote::before {
+       width: 80px;
+       height: 2px;
+    }
+    .viltrum-lineup-img {
+        width: 33rem;
+    }
+    .character-strip {
+        margin: 100px 0 35px;
+    }
+    .character-strip img {
+        height: 16rem;
+    }
+    .layer-3, .layer-4 {
+        font-size: 60px;
+    }
+    .footer-title {
+        font-size: 22px;
+        letter-spacing: 2.5px;
+    }
+    .footer-quote {
+        font-size: 9px;
+    }
+    .footer-bottom {
+        margin-top: 30px;
+        font-size: 10px;
+    }
+}
+@media (max-width: 600px) {
+    .home-overlay h2 {
+        margin-top: 130px;
+        font-size: 8px;
+    }
+    .home-content-line {
+        margin: 80px auto 20px;
+   }
+    .quotes-section {
+        gap: 50px;
+    }
+    .emperor-argal-quote, .coalition-quote {
+        width: 180px;
+        font-size: 10px;
+    }
+    .emperor-argal-quote::before,
+    .coalition-quote::before {
+        left: 20px;
+    }
+    .viltrum-lineup-img {
+        width: 28rem;
+    }
+    .character-strip {
+        margin: 50px 0 0;
+        gap: 80px;
+    }
+    .character-strip img {
+        height: 12rem;
+    }
+    .layer-3, .layer-4 {
+        font-size: 50px;
+    }
+    .layer-4 span {
+        margin: 0 auto 250px;
+    }
+    .footer-title {
+        font-size: 18px;
+        letter-spacing: 2.2px;
+    }
+    .footer-quote {
+        margin-top: 8px;
+        font-size: 7px;
+        letter-spacing: 1.8px;
+    }
+    .footer-bottom {
+        margin-top: 20px;
+        font-size: 8px;
+    }
+}
+@media (max-width: 500px) {
+    .home-overlay {
+        padding: 0 60px;
+    }
+    .home-overlay h2 {
+        margin-top: 100px;
+    }
+    .quotes-section {
+        gap: 40px;
+    }
+    .emperor-argal-quote, .coalition-quote {
+        width: 150px;
+        padding: 15px 17px;
+        font-size: 9px;
+        margin: 100px auto;
+    }
+    .emperor-argal-quote::before,
+    .coalition-quote::before {
+       width: 50px;
+       left: 15px;
+    }
+    .viltrum-lineup-img {
+        width: 23rem;
+    }
+    .character-strip {
+        margin: 30px 0 0;
+    }
+    .character-strip img {
+        height: 10rem;
+    }
+    .layer-3, .layer-4 {
+        font-size: 40px;
+    }
+    .layer-4 span {
+        margin: 0 auto 200px;
+    }
+    .footer-title {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    .footer-quote {
+        margin-top: 6px;
+        font-size: 6px;
+        letter-spacing: 1.6px;
+    }
+    .footer-bottom {
+        margin-top: 15px;
+        padding-top: 15px;
+        font-size: 7px;
+    }
+}
+@media (max-width: 425px) {
+    .home-overlay h2 {
+        font-size: 6px;
+    }
+    .character-strip {
+        margin: 0;
+        gap: 50px;
+    
+    }
+    .quotes-section {
+        gap: 10px;
+    }
+    .emperor-argal-quote, .coalition-quote {
+        border-radius: 15px;
+        margin: 80px auto;
+    }
+    .viltrum-lineup-img {
+        width: 18rem;
+    }
+    .character-strip img {
+        height: 9rem;
+    }
+    .layer-3, .layer-4 {
+        font-size: 30px;
+    }
+    .layer-4 span {
+        margin: 0 auto 160px;
+    }
+    .footer-title {
+        font-size: 14px;
+        letter-spacing: 1.8px;
+    }
+    .footer-quote {
+        margin-top: 5px;
+        font-size: 5px;
+        letter-spacing: 1.4px;
+    }
+    .footer-bottom {
+        margin-top: 12px;
+        font-size: 6px;
+    }
+}
+@media (max-width: 350px) {
+    .home-overlay {
+        padding: 0 40px;
+    }
+    .home-overlay h2 {
+        font-size: 5px;
+    }
+    .home-content-line {
+        margin: 60px auto 20px;
+   }
+    .empire-visual {
+        gap: 180px;
+    }
+    .emperor-argal-quote, .coalition-quote {
+        width: 100px;
+        padding: 10px 12px;
+        font-size: 6px;
+        line-height: 1.2;
+        border-radius: 12px;
+        margin: 50px auto;
+    }
+    .emperor-argal-quote::before,
+    .coalition-quote::before {
+       left: 10px;
+    }
+    .viltrum-lineup-img {
+        width: 16rem;
+    }
+    .character-strip img {
+        height: 6rem;
+    }
+    .layer-3, .layer-4 {
+        font-size: 20px;
+    }
+    .layer-4 {
+        margin: 100px auto;
+    }
+    .layer-4 span {
+        margin: 0 auto 100px;
+    }
+    .layer-3 {
+        gap: 0;
+    }
+    .footer {
+        margin-top: 120px;
+    }
+    .footer-title {
+        font-size: 12px;
+        letter-spacing: 1.2px;
+    }
+    .footer-quote {
+        letter-spacing: 1.2px;
+    }
+    .footer-bottom {
+        margin-top: 10px;
+        font-size: 5px;
+    }
 }

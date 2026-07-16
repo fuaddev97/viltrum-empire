@@ -1,11 +1,16 @@
 .members-section {
-    background: linear-gradient(to bottom, #0a0a0a, #111 40%, #141414 100%);
+    background: radial-gradient(
+        circle at top,
+        #111,
+        #0a0a0a 60%,
+        #000
+    );
     padding: 80px 0;
 }
 .members-hero {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: auto;
     overflow: hidden;
 }
 .members-hero img {
@@ -40,7 +45,6 @@
     color: #ffffff;
 }
 .members-subtitle {
-    margin-top: 10px;
     font-size: 16px;
     letter-spacing: 3px;
     color: #bbbbbb;
@@ -51,7 +55,6 @@
     width: 80px;
     height: 3px;
     background: #E50914;
-    margin: 10px auto 0;
 }
 .members-hero img {
     transition: transform 1.5s ease;
@@ -83,9 +86,8 @@
 .container {
     width: 260px;
     height: 360px;
-    background: #111;
     border-radius: 12px;
-    border: 1px solid rgba(255,255,255,0.08);
+    border: 1px solid rgba(255, 255, 255, 0.297);
     display: flex;
     flex-direction: column;
     transition: all 0.3s ease;
@@ -127,8 +129,8 @@
     display: none;
 }
 .clicked-card {
-    width: 700px;
-    max-width: 90%;
+    width: 40%;
+    height: 80vh;
     background: #0f0f0f;
     border-radius: 16px;
     border: 1px solid rgba(255,255,255,0.08);
@@ -161,17 +163,17 @@
 }
 .clicked-card p {
     padding: 25px 30px 30px;
-    font-size: 15px;
-    line-height: 1.7;
+    line-height: 1.5;
     color: #cfcfcf;
     text-align: left;
 }
 .member-name {
     font-family: 'Anton', sans-serif;
-    font-size: 26px;
+    font-size: 60px;
     letter-spacing: 2px;
     color: #ffffff;
     padding: 20px 30px 0;
+    margin: 0 auto;
 }
 .swiper-slide {
     display: flex;
@@ -185,12 +187,12 @@
 }
 .swiper {
     width: 100%;
-    height: 300px;
+    height: 600px;
 }
 .clicked-card p {
-    margin-top: 20px;
+    margin-top: 15px;
     text-align: center;
-    font-size: 15px;
+    font-size: 30px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
 }
@@ -206,4 +208,628 @@
     justify-content: center;
     align-items: center;
     transition: background-color 0.3s ease, transform 0.3s ease;
+}
+@media (max-width: 2880px) {
+    .members-overlay {
+    margin: 200px 0 0;
+    }
+    .members-title {
+        font-size: 140px;
+    }
+    .members-title::after {
+        width: 250px;
+        height: 8px;
+        margin: -15px auto 15px;
+    }
+    .members-subtitle {
+        margin: 0 auto;
+        font-size: 35px;
+    }
+    .members-intro {
+        font-size: 30px;
+    }
+    .members-grid {
+        gap: 290px;
+    }
+    .container {
+        width: 560px;
+        height: 660px;
+        border-radius: 30px;
+    }
+    .container img {
+        object-position: center -15px;
+    }
+    .container h1 {
+        margin-bottom: 20px;
+        font-size: 55px;
+    }
+    .swiper {
+        height: 600px;
+    }
+    .member-name {
+        font-size: 80px;
+    }
+    .clicked-card p {
+        font-size: 30px;
+        line-height: 1.6;
+    }
+}
+@media (max-width: 2660px) {
+    .members-grid {
+        gap: 250px;
+    }
+    .container h1 {
+        margin-bottom: 22px;
+    }
+}
+@media (max-width: 2500px) {
+    .members-grid {
+        gap: 200px;
+    }
+    .container h1 {
+        margin-bottom: 25px;
+        font-size: 50px;
+    }
+    .member-name {
+        font-size: 75px;
+    }
+    .clicked-card p {
+        font-size: 28px;
+        line-height: 1.5;
+    }
+}
+@media (max-width: 2350px) {
+    .members-grid {
+        gap: 250px;
+    }
+    .container {
+        width: 460px;
+        height: 560px;
+    }
+    .container h1 {
+        font-size: 44px;
+        letter-spacing: 2.5px;
+    }
+}
+@media (max-width: 2200px) {
+    .members-title {
+        font-size: 120px;
+    }
+    .members-title::after {
+        width: 240px;
+        height: 7px;
+        margin: -10px auto 10px;
+    }
+    .members-subtitle {
+        font-size: 30px;
+    }
+    .members-intro {
+        font-size: 26px;
+    }
+    .members-grid {
+        gap: 190px;
+    }
+    .container h1 {
+        font-size: 42px;
+    }
+    .member-name {
+        font-size: 65px;
+    }
+    .clicked-card p {
+        font-size: 25px;
+        line-height: 1.4;
+    }
+}
+@media (max-width: 2100px) {
+    .members-grid {
+        gap: 150px;
+    }
+}
+@media (max-width: 1950px) {
+    .members-grid {
+        gap: 90px;
+    }
+    .member-name {
+        font-size: 60px;
+    }
+    .clicked-card p {
+        font-size: 24px;
+        line-height: 1.3;
+        margin-top: 5px;
+    }
+}
+@media (max-width: 1800px) {
+    .members-title {
+        font-size: 100px;
+    }
+    .members-title::after {
+        width: 220px;
+        height: 6px;
+        margin: -5px auto 5px;
+    }
+    .members-subtitle {
+        font-size: 28px;
+    }
+    .members-intro {
+        font-size: 22px;
+    }
+    .members-grid {
+        gap: 115px;
+    }
+    .container {
+        width: 415px;
+        height: 515px;
+    }
+    .container h1 {
+        font-size: 38px;
+    }
+    .member-name {
+        font-size: 55px;
+    }
+    .clicked-card p {
+        font-size: 23px;
+        line-height: 1.2;
+    }
+}
+@media (max-width: 1700px) {
+    .members-grid {
+        gap: 50px;
+    }
+    .container h1 {
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+    .member-name {
+        font-size: 50px;
+    }
+    .clicked-card p {
+        font-size: 20px;
+    }
+}
+@media (max-width: 1600px) {
+    .members-overlay {
+        margin: 150px 0 0;
+    }
+    .members-title {
+        font-size: 80px;
+    }
+    .members-title::after {
+        width: 200px;
+        height: 5px;
+        margin: -5px auto 10px;
+    }
+    .members-subtitle {
+        font-size: 25px;
+    }
+    .members-intro {
+        font-size: 18px;
+    }
+    .members-grid {
+        gap: 100px;
+    }
+    .container {
+        width: 360px;
+        height: 460px;
+    }
+    .container h1 {
+        font-size: 34px;
+    }
+    .member-name {
+        font-size: 45px;
+    }
+    .clicked-card p {
+        font-size: 19px;
+    }
+}
+@media (max-width: 1500px) {
+    .members-grid {
+        gap: 60px;
+    }
+    .member-name {
+        font-size: 40px;
+    }
+    .clicked-card p {
+        font-size: 17px;
+    }
+}
+@media (max-width: 1400px) {
+    .members-title {
+        font-size: 70px;
+    }
+    .members-title::after {
+        width: 180px;
+        height: 4px;
+    }
+    .members-subtitle {
+        font-size: 20px;
+    }
+    .members-intro {
+        font-size: 16px;
+    }
+    .members-grid {
+        gap: 105px;
+    }
+    .container {
+        width: 300px;
+        height: 360px;
+    }
+    .container img {
+        object-position: center -8px;
+    }
+    .container h1 {
+        margin-bottom: 10px;
+        font-size: 28px;
+        letter-spacing: 1.8px;
+    }
+    .clicked-card p {
+        font-size: 16px;
+        padding: 15px 30px 25px;
+    }
+}
+@media (max-width: 1300px) {
+    .members-grid {
+        gap: 60px;
+    }
+    .container {
+        border-radius: 20px;
+    }
+    .container h1 {
+        letter-spacing: 1.6px;
+    }
+    .member-name {
+        font-size: 35px;
+    }
+    .clicked-card p {
+        font-size: 15px;
+        line-height: 1.1;
+        padding: 15px 25px 25px;
+    }
+}
+@media (max-width: 1200px) {
+    .members-overlay {
+        margin: 100px 0 0;
+    }
+    .members-title {
+        font-size: 60px;
+    }
+    .members-title::after {
+        width: 160px;
+        margin: 5px auto 10px;
+    }
+    .members-subtitle {
+        font-size: 18px;
+    }
+    .members-intro {
+        font-size: 14px;
+    }
+    .members-grid {
+        gap: 115px;
+    }
+    .container {
+        width: 240px;
+        height: 300px;
+    }
+    .container h1 {
+        font-size: 20px;
+    }
+    .member-name {
+        font-size: 30px;
+    }
+    .clicked-card p {
+        font-size: 14px;
+        padding: 10px 25px 25px;
+    }
+}
+@media (max-width: 1100px) {
+    .members-grid {
+        gap: 70px;
+    }
+    .clicked-card p {
+        font-size: 13px;
+    }
+    .clicked-card {
+        height: 60vh;
+    }
+}
+@media (max-width: 1000px) {
+    .members-title {
+        font-size: 50px;
+    }
+    .members-title::after {
+        width: 140px;
+        height: 3px;
+    }
+    .members-subtitle {
+        font-size: 16px;
+    }
+    .members-intro {
+        font-size: 12px;
+    }
+    .members-grid {
+        gap: 60px;
+    }
+    .container {
+        width: 220px;
+        height: 280px;
+        border-radius: 15px;
+    }
+    .container h1 {
+        letter-spacing: 1.4px;
+        padding: 15px 0;
+    }
+    .clicked-card p {
+        font-size: 12px;
+    }
+}
+@media (max-width: 900px) {
+    .members-intro {
+        font-size: 11px;
+    }
+    .members-content-line {
+        margin: 0 auto;
+    }
+    .members-grid {
+        gap: 50px;
+    }
+    .container {
+        width: 200px;
+        height: 260px;
+    }
+    .container h1 {
+        margin-bottom: 5px;
+        font-size: 18px;
+        letter-spacing: 1.2px;
+    }
+    .member-name {
+        font-size: 29px;
+        letter-spacing: 1.5px;
+    }
+    .clicked-card p {
+        font-size: 13px;
+    }
+}
+@media (max-width: 800px) {
+    .members-overlay {
+        margin: 100px 0 0;
+    }
+    .members-title {
+        font-size: 40px;
+        letter-spacing: 3px;
+    }
+    .members-title::after {
+        width: 100px;
+        height: 2.5px;
+        margin: 0px auto 5px;
+    }
+    .members-subtitle {
+        font-size: 12px;
+        letter-spacing: 2.5px;
+    }
+    .members-intro {
+        font-size: 10px;
+    }
+    .members-grid {
+        gap: 45px;
+    }
+    .container {
+        width: 170px;
+        height: 220px;
+    }
+    .container img {
+        object-position: center 0px;
+    }
+    .container h1 {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+    .member-name {
+        font-size: 27px;
+        letter-spacing: 1.2px;
+    }
+    .clicked-card {
+        width: 45%;
+    }
+}
+@media (max-width: 700px) {
+    .members-intro {
+        letter-spacing: 1.5px;
+        font-size: 9px;
+    }
+    .members-grid {
+        gap: 30px;
+    }
+    .container {
+        width: 150px;
+        height: 190px;
+    }
+    .container h1 {
+        font-size: 14px;
+        padding: 15px 0px 5px;
+    }
+    .member-name {
+        font-size: 24px;
+        padding: 20px 20px 0;
+    }
+    .clicked-card p {
+        font-size: 12px;
+        padding: 15px 25px 25px;
+    }
+}
+@media (max-width: 600px) {
+    .members-overlay {
+        margin: 60px 0 0;
+    }
+    .members-title {
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+    .members-title::after {
+        margin: 0px auto 3px;
+    }
+    .members-subtitle {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+    .members-intro {
+        font-size: 7px;
+    }
+    .members-grid {
+        gap: 40px;
+    }
+    .container {
+        width: 120px;
+        height: 150px;
+    }
+    .container h1 {
+        font-size: 10px;
+        letter-spacing: 0.8px;
+    }
+    .member-name {
+        font-size: 23px;
+        padding: 20px 15px 0;
+    }
+    .clicked-card p {
+        padding: 10px 20px 25px;
+    }
+    .clicked-card {
+        width: 60%;
+    }
+}
+@media (max-width: 500px) {
+    .members-overlay {
+        margin: 50px 0 0;
+    }
+    .members-title {
+        font-size: 25px;
+    }
+    .members-section {
+        padding: 40px 0;
+    }
+    .members-intro {
+        letter-spacing: 1px;
+        font-size: 6px;
+    }
+    .members-grid {
+        gap: 30px;
+        margin: 40px auto 0;
+    }
+    .container {
+        width: 100px;
+        height: 130px;
+        border-radius: 5px;
+    }
+    .container img {
+        height: 75%;
+    }
+    .container h1 {
+        font-size: 9px;
+        padding: 10px 0px 5px;
+    }
+    .member-name {
+        font-size: 22px;
+        padding: 15px 15px 0;
+    }
+    .clicked-card p {
+        font-size: 11px;
+        padding: 10px 20px 20px;
+    }
+    .clicked-card {
+        height: 50vh;
+    }
+}
+@media (max-width: 400px) {
+    .members-overlay {
+        margin: 50px 0 0;
+    }
+    .members-title {
+        font-size: 20px;
+        letter-spacing: 1.5px;
+    }
+    .members-title::after {
+        height: 1px;
+        margin: 0px auto 2px;
+    }
+    .members-subtitle {
+        font-size: 8px;
+        letter-spacing: 1.5px;
+    }
+    .members-intro {
+        font-size: 5px;
+        margin-bottom: 0;
+    }
+    .members-grid {
+        gap: 20px;
+    }
+    .container {
+        width: 80px;
+        height: 100px;
+    }
+    .container h1 {
+        font-size: 6px;
+        padding: 9px 0px 5px;
+    }
+    .member-name {
+        font-size: 16px;
+        letter-spacing: 1.1px;
+        padding: 15px 12px 0;
+    }
+    .clicked-card p {
+        font-size: 8px;
+        padding: 10px 15px;
+    }
+}
+@media (max-width: 325px) {
+    .members-overlay {
+        margin: 40px 0 0;
+    }
+    .members-title {
+        font-size: 13px;
+    }
+    .members-title::after {
+        margin: 0px auto 0px;
+    }
+    .members-subtitle {
+        letter-spacing: 1px;
+    }
+    .members-intro {
+        padding: 0 10px;
+        font-size: 4px;
+    }
+    .members-grid {
+        gap: 10px;
+    }
+    .container {
+        width: 70px;
+        height: 90px;
+    }
+    .container h1 {
+        font-size: 5px;
+    }
+    .member-name {
+        font-size: 14px;
+        padding: 10px 12px 0;
+    }
+    .clicked-card p {
+        font-size: 6px;
+        padding: 5px 15px 10px;
+    }
+}
+@media (max-width: 280px) {
+    .container {
+        width: 60px;
+        height: 70px;
+    }
+    .container h1 {
+        margin-bottom: 0px;
+        font-size: 4px;
+        letter-spacing: 1px;
+    }
+    .member-name {
+        font-size: 10px;
+        letter-spacing: 1.0px;
+        padding: 10px 10px 0;
+    }
+    .clicked-card p {
+        padding: 5px 10px 10px;
+    }
 }

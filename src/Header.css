@@ -1,0 +1,397 @@
+.viltrum-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #E50914;
+    padding: 5px;
+    background-color: #0a0a0a;
+    box-shadow: 0 0 10px rgba(229, 9, 20, 0.4);
+}
+.header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
+    background: rgba(10, 10, 10, 0.7);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.home, .members, .empire, .conquests, .battles, .genetics {
+    position: relative;
+    color: #d6d6d6;
+    padding: 0 10px;
+    transition: all 0.3s ease;
+}
+.home::after,
+.members::after,
+.empire::after,
+.conquests::after,
+.battles::after,
+.genetics::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background: #E50914;
+    transition: width 0.3s ease;
+}
+.home:hover,
+.members:hover,
+.empire:hover,
+.conquests:hover,
+.battles:hover,
+.genetics:hover {
+    color: #ffffff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.home:hover::after,
+.members:hover::after,
+.empire:hover::after,
+.conquests:hover::after,
+.battles:hover::after,
+.genetics:hover::after {
+    width: 100%;
+}
+.header-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.header-content {
+    width: 60%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+.title-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    border-left: 2px solid #E50914;
+    padding-left: 10px;
+}
+.empire-label {
+    font-size: 12px;          /* was too small */
+    letter-spacing: 3px;
+    color: #aaaaaa;           /* brighter than before */
+    font-weight: 500;
+    position: relative;
+}
+.main-title {
+    font-family: 'Anton', sans-serif;
+    font-size: 26px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+.header-title img {
+    transition: transform 0.3s ease;
+}
+.header-title:hover img {
+    transform: scale(1.05);
+}
+.header-title:hover .main-title {
+    color: #E50914;
+}
+
+.home.active,
+.members.active,
+.empire.active,
+.conquests.active,
+.battles.active,
+.genetics.active {
+    color: #ffffff;
+}
+
+.home.active::after,
+.members.active::after,
+.empire.active::after,
+.conquests.active::after,
+.battles.active::after,
+.genetics.active::after {
+    width: 100%;
+    box-shadow: 0 0 10px #E50914;
+}
+@media (max-width: 2880px) {
+    .header {
+        height: 170px;
+    }
+    .title-text {
+        border-left: 4px solid #E50914;
+    }
+    .empire-label {
+        font-size: 2rem;
+    }
+    .main-title {
+        font-size: 4rem;
+    }
+    .viltrum-logo {
+        width: 120px;
+        height: 120px;
+    }
+    .header-content {
+        width: 65%;
+        font-size: 2.8rem;
+    }
+}
+@media (max-width: 2200px) {
+    .header {
+        height: 150px;
+    }
+    .empire-label {
+        font-size: 1.8rem;
+    }
+    .main-title {
+        font-size: 3.5rem;
+    }
+    .viltrum-logo {
+        width: 110px;
+        height: 110px;
+    }
+}
+@media (max-width: 1900px) {
+    .empire-label {
+        font-size: 1.6rem;
+    }
+    .main-title {
+        font-size: 3.2rem;
+    }
+    .viltrum-logo {
+        width: 100px;
+        height: 100px;
+    }
+    .header-content {
+        width: 63%;
+        font-size: 2rem;
+    }
+}
+@media (max-width: 1600px) {
+    .header {
+        height: 120px;
+    }
+    .empire-label {
+        font-size: 1.4rem;
+    }
+    .main-title {
+        font-size: 2.8rem;
+    }
+    .viltrum-logo {
+        width: 90px;
+        height: 90px;
+    }
+    .header-content {
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 1300px) {
+    .empire-label {
+        font-size: 1.2rem;
+    }
+    .main-title {
+        font-size: 2.3rem;
+    }
+    .viltrum-logo {
+        width: 80px;
+        height: 80px;
+    }
+    .header-content {
+        width: 62%;
+        font-size: 1.3rem;
+    }
+    .home::after, .members::after, .empire::after, .conquests::after, .battles::after, .genetics::after {
+        height: 3px;
+    }
+}
+@media (max-width: 1000px) {
+    .header {
+        height: 100px;
+    }
+    .title-text {
+        border-left: 3px solid #E50914;
+    }
+    .empire-label {
+        font-size: 1rem;
+    }
+    .main-title {
+        font-size: 2rem;
+    }
+    .viltrum-logo {
+        width: 70px;
+        height: 70px;
+    }
+    .header-content {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 900px) {
+    .header {
+        height: 90px;
+    }
+    .empire-label {
+        font-size: 0.85rem;
+    }
+    .main-title {
+        font-size: 1.7rem;
+    }
+    .viltrum-logo {
+        width: 60px;
+        height: 60px;
+    }
+    .header-content {
+        font-size: 0.9rem;
+    }
+    .home, .members, .empire, .conquests, .battles, .genetics {
+        padding: 0 9px;
+    }
+}
+@media (max-width: 800px) {
+    .header {
+        height: 90px;
+    }
+    .header-title {
+        gap: 6px;
+    }
+    .title-text {
+        padding-left: 6px;
+        border-left: 2.5px solid #E50914;
+    }
+    .empire-label {
+        font-size: 0.7rem;
+    }
+    .main-title {
+        font-size: 1.4rem;
+    }
+    .viltrum-logo {
+        width: 50px;
+        height: 50px;
+    }
+    .header-content {
+        width: 60%;
+        font-size: 0.75rem;
+    }
+    .home, .members, .empire, .conquests, .battles, .genetics {
+        padding: 0 8px;
+    }
+    .home::after, .members::after, .empire::after, .conquests::after, .battles::after, .genetics::after {
+        height: 2.5px;
+    }
+}
+@media (max-width: 700px) {
+    .header {
+        height: 80px;
+    }
+    .empire-label {
+        font-size: 0.6rem;
+    }
+    .main-title {
+        font-size: 1.2rem;
+    }
+    .viltrum-logo {
+        width: 45px;
+        height: 45px;
+    }
+    .header-content {
+        font-size: 0.65rem;
+    }
+    .home, .members, .empire, .conquests, .battles, .genetics {
+        padding: 0 7px;
+    }
+    .home::after, .members::after, .empire::after, .conquests::after, .battles::after, .genetics::after {
+        height: 2.3px;
+    }
+}
+@media (max-width: 600px) {
+    .header {
+        height: 75px;
+        padding: 0 10px;
+    }
+    .title-text {
+        border-left: 2.3px solid #E50914;
+    }
+    .empire-label {
+        font-size: 0.5rem;
+    }
+    .main-title {
+        font-size: 1rem;
+    }
+    .viltrum-logo {
+        width: 40px;
+        height: 40px;
+    }
+    .header-content {
+        width: 62%;
+        font-size: 0.5rem;
+    }
+    .home, .members, .empire, .conquests, .battles, .genetics {
+        padding: 0 5px;
+    }
+    .home::after, .members::after, .empire::after, .conquests::after, .battles::after, .genetics::after {
+        height: 2px;
+    }
+}
+@media (max-width: 450px) {
+    .header {
+        height: 60px;
+    }
+    .title-text {
+        line-height: 1.2;
+        border-left: 2px solid #E50914;
+    }
+    .empire-label {
+        letter-spacing: 2px;
+        font-size: 0.3rem;
+    }
+    .main-title {
+        font-size: 0.7rem;
+    }
+    .viltrum-logo {
+        width: 35px;
+        height: 35px;
+    }
+    .header-content {
+        width: 60%;
+        font-size: 0.4rem;
+    }
+}
+@media (max-width: 360px) {
+    .header {
+        height: 50px;
+        padding: 0 5px;
+    }
+    .header-title {
+        gap: 4px;
+    }
+    .title-text {
+        padding-left: 4px;
+    }
+    .empire-label {
+        font-size: 0.25rem;
+    }
+    .main-title {
+        font-size: 0.6rem;
+    }
+    .viltrum-logo {
+        width: 25px;
+        height: 25px;
+    }
+    .header-content {
+        font-size: 0.3rem;
+    }
+    .home, .members, .empire, .conquests, .battles, .genetics {
+        padding: 0 3px;
+    }
+    .home::after, .members::after, .empire::after, .conquests::after, .battles::after, .genetics::after {
+        height: 1px;
+    }
+}

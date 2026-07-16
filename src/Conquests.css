@@ -1,6 +1,6 @@
 .conquests-heading {
     position: relative;
-    height: 600px;
+    height: auto;
     width: 100%;
     overflow: hidden;
 }
@@ -38,9 +38,7 @@
     font-size: 64px;
     letter-spacing: 3px;
     color: #ffffffaf;
-    max-width: 800px;
-    line-height: 1.2;
-
+    max-width: 1000px;
     text-shadow:
         0 0 10px rgba(0,0,0,0.8),
         0 0 25px rgba(0,0,0,0.6),
@@ -93,12 +91,10 @@
     width: 50%;
     padding: 40px 40px;
 }
-
 .timeline-item.left {
     left: 0;
     text-align: right;
 }
-
 .timeline-item.right {
     left: 50%;
 }
@@ -109,7 +105,6 @@
     border: 1px solid rgba(255,255,255,0.05);
     transition: all 0.3s ease;
 }
-
 .timeline-content:hover {
     transform: translateY(-5px) scale(1.01);
     border: 1px solid rgba(229, 9, 20, 0.5);
@@ -142,11 +137,411 @@
     border-radius: 50%;
     box-shadow: 0 0 10px #E50914;
 }
-
 .timeline-item.left::before {
     right: -6px;
 }
-
 .timeline-item.right::before {
     left: -6px;
+}
+@media (max-width: 2900px) {
+    .conquests-quote {
+    font-size: 120px;
+    letter-spacing: 3px;
+    }
+    .conquests-hero {
+        margin-bottom: 300px;
+    }
+    .conquests-hero h1 {
+    font-size: 150px;
+    }
+    .subtitle {
+        font-size: 30px;
+    }
+    .timeline-item {
+        padding: 40px 60px;
+    }
+    .timeline-content {
+        padding: 35px;
+    }
+    .timeline-content img {
+        height: 450px;
+        margin-bottom: 40px;
+    }
+    .timeline-content h2 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    .timeline-content p {
+        font-size: 30px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 2500px) {
+    .timeline-content img {
+        height: 400px;
+        margin-bottom: 35px;
+    }
+    .timeline-content h2 {
+        font-size: 45px;
+    }
+    .timeline-content p {
+        font-size: 28px;
+    }
+}
+@media (max-width: 2300px) {
+    .timeline-content img {
+        height: 350px;
+        margin-bottom: 30px;
+    }
+    .timeline-content h2 {
+        font-size: 43px;
+    }
+    .timeline-content p {
+        font-size: 26px;
+    }
+}
+@media (max-width: 2000px) {
+    .conquests-quote {
+        font-size: 100px;
+    }
+    .conquests-hero {
+        margin-bottom: 200px;
+    }
+    .conquests-hero h1 {
+    font-size: 120px;
+    }
+    .subtitle {
+        font-size: 25px;
+    }
+    .timeline-content img {
+        height: 310px;
+        margin-bottom: 35px;
+    }
+    .timeline-content h2 {
+        font-size: 40px;
+    }
+    .timeline-content p {
+        font-size: 24px;
+        line-height: 1.4;
+        margin-bottom: 0px;
+    }
+}
+@media (max-width: 1800px) {
+    .timeline-content img {
+        height: 265px;
+        margin-bottom: 30px;
+    }
+    .timeline-content h2 {
+        font-size: 38px;
+        margin-bottom: 18px;
+    }
+    .timeline-content p {
+        font-size: 22px;
+        line-height: 1.3;
+    }
+}
+@media (max-width: 1600px) {
+    .conquests-quote {
+        font-size: 80px;
+    }
+    .conquests-hero h1 {
+        font-size: 100px;
+        letter-spacing: 4.5px;
+    }
+    .subtitle {
+        font-size: 22px;
+        letter-spacing: 2px;
+        margin-top: 5px;
+    }
+    .timeline-item {
+        padding: 40px 50px;
+    }
+    .timeline-content {
+        padding: 30px;
+    }
+    .timeline-content img {
+        height: 225px;
+        margin-bottom: 20px;
+    }
+    .timeline-content h2 {
+        font-size: 32px;
+        margin-bottom: 18px;
+    }
+    .timeline-content p {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+}
+@media (max-width: 1400px) {
+    .timeline-content {
+        padding: 25px;
+    }
+    .timeline-content img {
+        height: 185px;
+    }
+    .timeline-content h2 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .timeline-content p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 1200px) {
+    .conquests-quote {
+    font-size: 70px;
+    }
+    .conquests-hero {
+        margin-bottom: 180px;
+    }
+    .conquests-hero h1 {
+    font-size: 80px;
+    }
+    .subtitle {
+        font-size: 18px;
+    }
+    .timeline-content {
+        padding: 20px;
+        border-radius: 8px;
+    }
+    .timeline-content img {
+        height: 160px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+    }
+    .timeline-content h2 {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+    .timeline-content p {
+        font-size: 14px;
+    }
+}
+@media (max-width: 1000px) {
+    .conquests-quote {
+    font-size: 60px;
+    }
+    .conquests-hero {
+        margin-bottom: 150px;
+    }
+    .conquests-hero h1 {
+    font-size: 60px;
+    letter-spacing: 4px;
+    }
+    .subtitle {
+        font-size: 15px;
+        letter-spacing: 2px;
+        margin-top: 0;
+    }
+    .timeline-item {
+        padding: 40px;
+    }
+    .timeline-content {
+        padding: 18px;
+    }
+    .timeline-content img {
+        height: 128px;
+        margin-bottom: 10px;
+    }
+    .timeline-content h2 {
+        font-size: 20px;
+    }
+    .timeline-content p {
+        font-size: 12px;
+        line-height: 1.2;
+    }
+}
+@media (max-width: 900px) {
+    .timeline {
+        width: 85%;
+    }
+    .timeline-content p {
+        font-size: 11px;
+        line-height: 1.3;
+    }
+}
+@media (max-width: 800px) {
+    .conquests-quote {
+        font-size: 40px;
+        letter-spacing: 2.5px;
+    }
+    .conquests-hero {
+        margin-bottom: 100px;
+        padding: 80px 20px 80px;
+    }
+    .conquests-hero h1 {
+        font-size: 50px;
+        letter-spacing: 3px;
+    }
+    .subtitle {
+        font-size: 13px;
+        letter-spacing: 1.5px;
+    }
+    .timeline-content {
+        padding: 15px;
+        border-radius: 5px;
+    }
+    .timeline-content img {
+        height: 105px;
+        margin-bottom: 5px;
+        border-radius: 4px;
+    }
+    .timeline-content h2 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .timeline-content p {
+        font-size: 10px;
+        line-height: 1.2;
+    }
+}
+@media (max-width: 700px) {
+    .timeline-content {
+        padding: 13px;
+    }
+    .timeline-content img {
+        height: 86px;
+    }
+    .timeline-content h2 {
+        font-size: 13px;
+    }
+    .timeline-content p {
+        font-size: 8px;
+    }
+}
+@media (max-width: 600px) {
+    .conquests-quote {
+        font-size: 30px;
+    }
+    .conquests-hero {
+        margin-bottom: 50px;
+    }
+    .conquests-hero h1 {
+    font-size: 45px;
+    }
+    .subtitle {
+        font-size: 12px;
+        letter-spacing: 1.3px;
+    }
+    .timeline {
+        width: 88%;
+    }
+    .timeline-item {
+        padding: 40px 30px;
+    }
+    .timeline-content {
+        padding: 10px;
+    }
+    .timeline-content img {
+        height: 85px;
+    }
+    .timeline-content h2 {
+        font-size: 10px;
+    }
+    .timeline-content p {
+        font-size: 7px;
+    }
+}
+@media (max-width: 500px) {
+    .conquests-hero {
+        margin-bottom: 40px;
+        padding: 50px 20px;
+    }
+    .conquests-hero h1 {
+    font-size: 35px;
+    letter-spacing: 2px;
+    }
+    .subtitle {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+    .timeline {
+        width: 90%;
+    }
+    .timeline-content {
+        padding: 8px;
+    }
+    .timeline-content img {
+        height: 68px;
+        margin-bottom: 3px;
+    }
+    .timeline-content h2 {
+        font-size: 9px;
+        margin-bottom: 3px;
+    }
+    .timeline-content p {
+        font-size: 6px;
+        line-height: 1.1;
+    }
+}
+@media (max-width: 400px) {
+    .conquests-quote {
+    font-size: 20px;
+    letter-spacing: 2px;
+    }
+    .conquests-hero {
+        margin-bottom: 30px;
+        padding: 40px 20px;
+    }
+    .conquests-hero h1 {
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    }
+    .subtitle {
+        font-size: 8px;
+    }
+    .timeline-item {
+        padding: 40px 20px;
+    }
+    .timeline-content {
+        padding: 5px;
+        border-radius: 2px;
+    }
+    .timeline-content img {
+        height: 62px;
+        margin-bottom: 0px;
+        border-radius: 2px;
+    }
+    .timeline-content h2 {
+        font-size: 7px;
+        margin-bottom: 2px;
+    }
+    .timeline-content p {
+        font-size: 5px;
+        line-height: 1;
+    }
+}
+@media (max-width: 350px) {
+    .timeline-content img {
+        height: 50px;
+    }
+    .timeline-content p {
+        font-size: 4px;
+    }
+}
+@media (max-width: 300px) {
+    .conquests-quote {
+    font-size: 16px;
+    }
+    .conquests-hero {
+        margin-bottom: 15px;
+        padding: 30px 20px;
+    }
+    .conquests-hero h1 {
+    font-size: 22px;
+    letter-spacing: 1.2px;
+    }
+    .subtitle {
+        font-size: 6px;
+    }
+    .timeline-content img {
+        height: 40px;
+    }
+    .timeline-content h2 {
+        font-size: 6px;
+    }
+    .timeline-content p {
+        font-size: 3.5px;
+    }
 }
