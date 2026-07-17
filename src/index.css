@@ -56,6 +56,13 @@ body {
     text-align: center;
     color: #d6d6d6;
 }
+.home-overlay h2 {
+    max-width: 1100px;
+    font-size: 44px;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
 .home-section {
     padding: 60px 0;
     position: relative;
@@ -186,7 +193,8 @@ body {
     animation: fadeIn 2s ease 0.9s forwards;
 }
 .viltrum-lineup-img {
-    width: 60rem;
+    width: 90%;
+    max-width: 70rem;
     margin: 0 auto;
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -196,8 +204,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    gap: 200px;
-    margin: 50px 0;
+    flex-wrap: wrap;
+    gap: 120px;
+    margin: 100px 0 50px;
 }
 .character-strip img {
     height: 32.5rem;
@@ -256,552 +265,857 @@ body {
 }
 @media (max-width: 2880px) {
     .home-overlay h2 {
-        margin-top: 500px;
-        font-size: 40px;
+        font-size: 42px;
+    }
+    .home-overlay {
+        padding: 0 90px;
     }
     .home-content-line {
-        margin: 400px auto;
-   }
-   .layer-3, .layer-4 {
-        font-size: 160px;
+        margin: 90px auto 38px;
+    }
+    .layer-3, .layer-4 {
+        font-size: 96px;
     }
     .layer-4 span {
-        margin: 0 auto 700px;
+        margin: 0 auto 90px;
     }
     .viltrum-lineup-img {
-        margin: 300px auto;
-        width: 125rem;
+        max-width: 66rem;
     }
     .character-strip {
-        margin: 500px 0 50px;
-        gap: 250px;
+        gap: 110px;
+        margin: 90px 0 45px;
+        flex-wrap: wrap;
     }
     .character-strip img {
-        height: 60rem;
+        height: 24rem;
+    }
+    .quotes-section {
+        gap: 90px;
     }
     .emperor-argal-quote, .coalition-quote {
-        width: 750px;
-        padding: 50px;
-        font-size: 45px;
-        line-height: 1.4;
-        border-radius: 50px;
-        margin: 500px auto;
+        width: 90%;
+        max-width: 480px;
+        padding: 36px;
+        font-size: 23px;
+        border-radius: 20px;
+        margin: 130px auto;
     }
     .emperor-argal-quote::before,
     .coalition-quote::before {
-       width: 180px;
-       height: 5px;
-       left: 50px;
-    }
-    .footer-line {
-        height: 2px;
+        width: 110px;
+        height: 3px;
+        left: 36px;
     }
     .footer-title {
-        font-size: 75px;
+        font-size: 40px;
     }
     .footer-quote {
-        font-size: 30px;
+        font-size: 13.5px;
+        margin-top: 11px;
     }
     .footer-bottom {
-        font-size: 32px;
+        font-size: 13.5px;
+        margin-top: 50px;
     }
 }
 @media (max-width: 2500px) {
     .home-overlay h2 {
-        font-size: 38px;
+        font-size: 40px;
+    }
+    .home-overlay {
+        padding: 0 85px;
+    }
+    .home-content-line {
+        margin: 85px auto 36px;
+    }
+    .layer-3, .layer-4 {
+        font-size: 88px;
+    }
+    .layer-4 span {
+        margin: 0 auto 80px;
+    }
+    .viltrum-lineup-img {
+        max-width: 60rem;
+    }
+    .character-strip {
+        gap: 100px;
+        margin: 80px 0 40px;
+        flex-wrap: wrap;
+    }
+    .character-strip img {
+        height: 22rem;
+    }
+    .quotes-section {
+        gap: 80px;
+    }
+    .emperor-argal-quote, .coalition-quote {
+        width: 90%;
+        max-width: 440px;
+        padding: 34px;
+        font-size: 21px;
+        border-radius: 18px;
+        margin: 110px auto;
+    }
+    .emperor-argal-quote::before,
+    .coalition-quote::before {
+        width: 100px;
+        height: 2.8px;
+        left: 34px;
     }
     .footer-title {
-        font-size: 70px;
+        font-size: 38px;
     }
     .footer-quote {
-        font-size: 28px;
+        font-size: 13px;
+        margin-top: 11px;
     }
     .footer-bottom {
-        font-size: 30px;
+        font-size: 13px;
+        margin-top: 50px;
     }
 }
 @media (max-width: 2200px) {
     .home-overlay h2 {
-        font-size: 35px;
+        font-size: 38px;
     }
-   .layer-3, .layer-4 {
-        font-size: 120px;
-    }
-    .layer-4 span {
-        margin: 0 auto 600px;
-    }
-    .viltrum-lineup-img {
-    width: 110rem;
-    }
-    .character-strip img {
-        height: 50rem;
-    }
-}
-@media (max-width: 1900px) {
-    .home-overlay h2 {
-        font-size: 32px;
-    }
-    .viltrum-lineup-img {
-        margin: 0 auto;
-        width: 95rem;
-    }
-    .emperor-argal-quote, .coalition-quote {
-        width: 650px;
-        font-size: 40px;
-        border-radius: 45px;
-    }
-    .footer-title {
-        font-size: 65px;
-    }
-    .footer-quote {
-        font-size: 18px;
-    }
-    .footer-bottom {
-        font-size: 22px;
-    }
-}
-@media (max-width: 1700px) {
-    .viltrum-lineup-img {
-        width: 80rem;
-    }
-    .character-strip {
-        margin: 450px 0 50px;
-    }
-    .character-strip img {
-        height: 40rem;
-    }
-    .emperor-argal-quote, .coalition-quote {
-        border-radius: 40px;
-    }
-}
-@media (max-width: 1500px) {
-    .home-overlay h2 {
-        margin-top: 300px;
-        font-size: 26px;
+    .home-overlay {
+        padding: 0 75px;
     }
     .home-content-line {
-        margin: 200px auto;
-   }
-   .layer-3, .layer-4 {
+        margin: 75px auto 34px;
+    }
+    .layer-3, .layer-4 {
         font-size: 80px;
     }
     .layer-4 span {
-        margin: 0 auto 550px;
+        margin: 0 auto 70px;
     }
     .viltrum-lineup-img {
-        width: 65rem;
+        max-width: 54rem;
     }
     .character-strip {
-        margin: 400px 0 50px;
-    }
-    .character-strip img {
-        height: 30rem;
-    }
-    .emperor-argal-quote, .coalition-quote {
-        width: 400px;
-        padding: 40px;
-        font-size: 24px;
-        border-radius: 25px;
-        margin: 400px auto;
-    }
-    .emperor-argal-quote::before,
-    .coalition-quote::before {
-       width: 140px;
-       height: 3px;
-       left: 40px;
-    }
-    .footer-title {
-        font-size: 50px;
-    }
-    .footer-quote {
-        font-size: 16px;
-    }
-    .footer-bottom {
-        font-size: 20px;
-    }
-
-}
-@media (max-width: 1200px) {
-    .home-overlay h2 {
-        font-size: 22px;
-    }
-    .viltrum-lineup-img {
-        width: 53rem;
-    }
-    .character-strip {
-        margin: 200px 0 50px;
-        gap: 150px;
-    }
-    .character-strip img {
-        height: 25rem;
-    }
-    .layer-4 span {
-        margin: 0 auto 450px;
-    }
-    .emperor-argal-quote, .coalition-quote {
-        width: 320px;
-        padding: 30px;
-        font-size: 19px;
-        border-radius: 20px;
-        margin: 150px auto;
-    }
-    .emperor-argal-quote::before,
-    .coalition-quote::before {
-       width: 120px;
-       height: 2.8px;
-       left: 30px;
-    }
-    .footer-title {
-        font-size: 45px;
-    }
-    .footer-quote {
-        font-size: 15px;
-    }
-    .footer-bottom {
-        font-size: 18px;
-    }
-}
-@media (max-width: 1100px) {
-    .quotes-section {
         gap: 90px;
-    }
-}
-@media (max-width: 1000px) {
-    .home-overlay h2 {
-        margin-top: 250px;
-        font-size: 16px;
-    }
-    .home-content-line {
-        margin: 100px auto;
-   }
-    .quotes-section {
-        gap: 80px;
-    }
-    .home-hero {
-        height: auto;
-    }
-    .viltrum-lineup-img {
-        width: 48rem;
-    }
-    .emperor-argal-quote, .coalition-quote {
-        width: 280px;
-        padding: 25px;
-        font-size: 16px;
-    }
-    .emperor-argal-quote::before,
-    .coalition-quote::before {
-       width: 100px;
-       height: 2.5px;
-       left: 25px;
-    }
-    .footer-title {
-        font-size: 35px;
-    }
-    .footer-quote {
-        font-size: 14px;
-    }
-    .footer-bottom {
-        margin-top: 40px;
-        font-size: 15px;
-    }
-}
-@media (max-width: 900px) {
-    .quotes-section {
-        gap: 70px;
-    }
-    .viltrum-lineup-img {
-        width: 43rem;
-    }
-    .character-strip {
-        margin: 150px 0 35px;
+        margin: 70px 0 38px;
+        flex-wrap: wrap;
     }
     .character-strip img {
         height: 20rem;
     }
+    .quotes-section {
+        gap: 70px;
+    }
+    .emperor-argal-quote, .coalition-quote {
+        width: 90%;
+        max-width: 400px;
+        padding: 32px;
+        font-size: 19px;
+        border-radius: 18px;
+        margin: 95px auto;
+    }
+    .emperor-argal-quote::before,
+    .coalition-quote::before {
+        width: 92px;
+        height: 2.6px;
+        left: 32px;
+    }
+    .footer-title {
+        font-size: 36px;
+    }
+    .footer-quote {
+        font-size: 12.5px;
+        margin-top: 10px;
+    }
+    .footer-bottom {
+        font-size: 12.5px;
+        margin-top: 45px;
+    }
 }
-@media (max-width: 800px) {
+@media (max-width: 1900px) {
     .home-overlay h2 {
-        margin-top: 150px;
-        font-size: 12px;
+        font-size: 35px;
+    }
+    .home-overlay {
+        padding: 0 65px;
     }
     .home-content-line {
-        margin: 100px auto 80px;
-   }
+        margin: 65px auto 32px;
+    }
     .layer-3, .layer-4 {
-        font-size: 70px;
-    }  
+        font-size: 72px;
+    }
+    .layer-4 span {
+        margin: 0 auto 60px;
+    }
     .viltrum-lineup-img {
-        width: 38rem;
+        max-width: 48rem;
     }
     .character-strip {
-        gap: 120px;
+        gap: 80px;
+        margin: 60px 0 35px;
+        flex-wrap: wrap;
     }
     .character-strip img {
         height: 18rem;
     }
+    .quotes-section {
+        gap: 64px;
+    }
     .emperor-argal-quote, .coalition-quote {
-        width: 240px;
-        font-size: 14px;
+        width: 90%;
+        max-width: 380px;
+        padding: 30px;
+        font-size: 18px;
+        border-radius: 16px;
+        margin: 80px auto;
     }
     .emperor-argal-quote::before,
     .coalition-quote::before {
-       width: 90px;
+        width: 84px;
+        height: 2.4px;
+        left: 30px;
     }
     .footer-title {
-        font-size: 30px;
-        letter-spacing: 3px;
+        font-size: 33px;
     }
     .footer-quote {
+        font-size: 12px;
         margin-top: 10px;
-        font-size: 11px;
-        letter-spacing: 2px;
     }
     .footer-bottom {
         font-size: 12px;
+        margin-top: 45px;
     }
 }
-@media (max-width: 700px) {
+@media (max-width: 1700px) {
     .home-overlay h2 {
-        font-size: 10px;
+        font-size: 32px;
+    }
+    .home-overlay {
+        padding: 0 56px;
     }
     .home-content-line {
-        margin: 130px auto 60px;
-   }
-    .quotes-section {
-       gap: 60px;
+        margin: 56px auto 30px;
     }
-    .emperor-argal-quote, .coalition-quote {
-        width: 200px;
-        padding: 20px;
-        font-size: 12px;
-        line-height: 1.3;
+    .layer-3, .layer-4 {
+        font-size: 64px;
     }
-    .emperor-argal-quote::before,
-    .coalition-quote::before {
-       width: 80px;
-       height: 2px;
+    .layer-4 span {
+        margin: 0 auto 52px;
     }
     .viltrum-lineup-img {
-        width: 33rem;
+        max-width: 42rem;
     }
     .character-strip {
-        margin: 100px 0 35px;
+        gap: 70px;
+        margin: 52px 0 32px;
+        flex-wrap: wrap;
     }
     .character-strip img {
         height: 16rem;
     }
-    .layer-3, .layer-4 {
-        font-size: 60px;
-    }
-    .footer-title {
-        font-size: 22px;
-        letter-spacing: 2.5px;
-    }
-    .footer-quote {
-        font-size: 9px;
-    }
-    .footer-bottom {
-        margin-top: 30px;
-        font-size: 10px;
-    }
-}
-@media (max-width: 600px) {
-    .home-overlay h2 {
-        margin-top: 130px;
-        font-size: 8px;
-    }
-    .home-content-line {
-        margin: 80px auto 20px;
-   }
     .quotes-section {
-        gap: 50px;
+        gap: 56px;
     }
     .emperor-argal-quote, .coalition-quote {
-        width: 180px;
-        font-size: 10px;
+        width: 90%;
+        max-width: 360px;
+        padding: 28px;
+        font-size: 17px;
+        border-radius: 16px;
+        margin: 70px auto;
     }
     .emperor-argal-quote::before,
     .coalition-quote::before {
-        left: 20px;
-    }
-    .viltrum-lineup-img {
-        width: 28rem;
-    }
-    .character-strip {
-        margin: 50px 0 0;
-        gap: 80px;
-    }
-    .character-strip img {
-        height: 12rem;
-    }
-    .layer-3, .layer-4 {
-        font-size: 50px;
-    }
-    .layer-4 span {
-        margin: 0 auto 250px;
+        width: 76px;
+        height: 2.2px;
+        left: 28px;
     }
     .footer-title {
-        font-size: 18px;
-        letter-spacing: 2.2px;
+        font-size: 30px;
     }
     .footer-quote {
-        margin-top: 8px;
-        font-size: 7px;
-        letter-spacing: 1.8px;
+        font-size: 11.5px;
+        margin-top: 10px;
     }
     .footer-bottom {
-        margin-top: 20px;
-        font-size: 8px;
+        font-size: 11.5px;
+        margin-top: 40px;
     }
 }
-@media (max-width: 500px) {
-    .home-overlay {
-        padding: 0 60px;
-    }
+@media (max-width: 1500px) {
     .home-overlay h2 {
-        margin-top: 100px;
+        font-size: 29px;
+    }
+    .home-overlay {
+        padding: 0 48px;
+    }
+    .home-content-line {
+        margin: 48px auto 28px;
+    }
+    .layer-3, .layer-4 {
+        font-size: 56px;
+    }
+    .layer-4 span {
+        margin: 0 auto 46px;
+    }
+    .viltrum-lineup-img {
+        max-width: 36rem;
+    }
+    .character-strip {
+        gap: 60px;
+        margin: 44px 0 30px;
+        flex-wrap: wrap;
+    }
+    .character-strip img {
+        height: 14.5rem;
+    }
+    .quotes-section {
+        gap: 48px;
+    }
+    .emperor-argal-quote, .coalition-quote {
+        width: 90%;
+        max-width: 340px;
+        padding: 26px;
+        font-size: 16px;
+        border-radius: 14px;
+        margin: 60px auto;
+    }
+    .emperor-argal-quote::before,
+    .coalition-quote::before {
+        width: 68px;
+        height: 2px;
+        left: 26px;
+    }
+    .footer-title {
+        font-size: 28px;
+    }
+    .footer-quote {
+        font-size: 11px;
+        margin-top: 9px;
+    }
+    .footer-bottom {
+        font-size: 11px;
+        margin-top: 40px;
+    }
+}
+@media (max-width: 1200px) {
+    .home-overlay h2 {
+        font-size: 26px;
+    }
+    .home-overlay {
+        padding: 0 40px;
+    }
+    .home-content-line {
+        margin: 40px auto 26px;
+    }
+    .layer-3, .layer-4 {
+        font-size: 48px;
+    }
+    .layer-4 span {
+        margin: 0 auto 38px;
+    }
+    .viltrum-lineup-img {
+        max-width: 30rem;
+    }
+    .character-strip {
+        gap: 50px;
+        margin: 36px 0 28px;
+        flex-wrap: wrap;
+    }
+    .character-strip img {
+        height: 12.5rem;
     }
     .quotes-section {
         gap: 40px;
     }
     .emperor-argal-quote, .coalition-quote {
-        width: 150px;
-        padding: 15px 17px;
-        font-size: 9px;
-        margin: 100px auto;
+        width: 90%;
+        max-width: 300px;
+        padding: 24px;
+        font-size: 15px;
+        border-radius: 14px;
+        margin: 50px auto;
     }
     .emperor-argal-quote::before,
     .coalition-quote::before {
-       width: 50px;
-       left: 15px;
+        width: 60px;
+        height: 2px;
+        left: 24px;
+    }
+    .footer-title {
+        font-size: 25px;
+    }
+    .footer-quote {
+        font-size: 10.5px;
+        margin-top: 9px;
+    }
+    .footer-bottom {
+        font-size: 10.5px;
+        margin-top: 40px;
+    }
+}
+@media (max-width: 1000px) {
+    .home-overlay h2 {
+        font-size: 23px;
+    }
+    .home-overlay {
+        padding: 0 32px;
+    }
+    .home-content-line {
+        margin: 34px auto 24px;
+    }
+    .layer-3, .layer-4 {
+        font-size: 42px;
+    }
+    .layer-4 span {
+        margin: 0 auto 32px;
     }
     .viltrum-lineup-img {
-        width: 23rem;
+        max-width: 26rem;
     }
     .character-strip {
-        margin: 30px 0 0;
+        gap: 40px;
+        margin: 30px 0 26px;
+        flex-wrap: wrap;
+    }
+    .character-strip img {
+        height: 11rem;
+    }
+    .quotes-section {
+        gap: 34px;
+    }
+    .emperor-argal-quote, .coalition-quote {
+        width: 90%;
+        max-width: 280px;
+        padding: 22px;
+        font-size: 14.5px;
+        border-radius: 12px;
+        margin: 42px auto;
+    }
+    .emperor-argal-quote::before,
+    .coalition-quote::before {
+        width: 52px;
+        height: 1.8px;
+        left: 22px;
+    }
+    .footer-title {
+        font-size: 22px;
+    }
+    .footer-quote {
+        font-size: 10px;
+        margin-top: 8px;
+    }
+    .footer-bottom {
+        font-size: 10px;
+        margin-top: 35px;
+    }
+}
+@media (max-width: 900px) {
+    .home-overlay h2 {
+        font-size: 21px;
+    }
+    .home-overlay {
+        padding: 0 28px;
+    }
+    .home-content-line {
+        margin: 30px auto 22px;
+    }
+    .layer-3, .layer-4 {
+        font-size: 38px;
+    }
+    .layer-4 span {
+        margin: 0 auto 28px;
+    }
+    .viltrum-lineup-img {
+        max-width: 23rem;
+    }
+    .character-strip {
+        gap: 34px;
+        margin: 26px 0 24px;
+        flex-wrap: wrap;
     }
     .character-strip img {
         height: 10rem;
     }
-    .layer-3, .layer-4 {
-        font-size: 40px;
-    }
-    .layer-4 span {
-        margin: 0 auto 200px;
-    }
-    .footer-title {
-        font-size: 16px;
-        letter-spacing: 2px;
-    }
-    .footer-quote {
-        margin-top: 6px;
-        font-size: 6px;
-        letter-spacing: 1.6px;
-    }
-    .footer-bottom {
-        margin-top: 15px;
-        padding-top: 15px;
-        font-size: 7px;
-    }
-}
-@media (max-width: 425px) {
-    .home-overlay h2 {
-        font-size: 6px;
-    }
-    .character-strip {
-        margin: 0;
-        gap: 50px;
-    
-    }
     .quotes-section {
-        gap: 10px;
+        gap: 28px;
     }
     .emperor-argal-quote, .coalition-quote {
-        border-radius: 15px;
-        margin: 80px auto;
+        width: 90%;
+        max-width: 260px;
+        padding: 20px;
+        font-size: 14px;
+        border-radius: 12px;
+        margin: 36px auto;
+    }
+    .emperor-argal-quote::before,
+    .coalition-quote::before {
+        width: 46px;
+        height: 1.8px;
+        left: 20px;
+    }
+    .footer-title {
+        font-size: 20px;
+    }
+    .footer-quote {
+        font-size: 9.5px;
+        margin-top: 8px;
+    }
+    .footer-bottom {
+        font-size: 9.5px;
+        margin-top: 35px;
+    }
+}
+@media (max-width: 800px) {
+    .home-overlay h2 {
+        font-size: 19px;
+    }
+    .home-overlay {
+        padding: 0 24px;
+    }
+    .home-content-line {
+        margin: 26px auto 20px;
+    }
+    .layer-3, .layer-4 {
+        font-size: 34px;
+    }
+    .layer-4 span {
+        margin: 0 auto 24px;
     }
     .viltrum-lineup-img {
-        width: 18rem;
+        max-width: 20rem;
+    }
+    .character-strip {
+        gap: 28px;
+        margin: 22px 0 20px;
+        flex-wrap: wrap;
     }
     .character-strip img {
         height: 9rem;
+    }
+    .quotes-section {
+        gap: 24px;
+    }
+    .emperor-argal-quote, .coalition-quote {
+        width: 90%;
+        max-width: 240px;
+        padding: 18px;
+        font-size: 13.5px;
+        border-radius: 10px;
+        margin: 30px auto;
+    }
+    .emperor-argal-quote::before,
+    .coalition-quote::before {
+        width: 40px;
+        height: 1.6px;
+        left: 18px;
+    }
+    .footer-title {
+        font-size: 18px;
+    }
+    .footer-quote {
+        font-size: 9px;
+        margin-top: 8px;
+    }
+    .footer-bottom {
+        font-size: 9px;
+        margin-top: 30px;
+    }
+}
+@media (max-width: 700px) {
+    .home-overlay h2 {
+        font-size: 17px;
+    }
+    .home-overlay {
+        padding: 0 20px;
+    }
+    .home-content-line {
+        margin: 22px auto 18px;
     }
     .layer-3, .layer-4 {
         font-size: 30px;
     }
     .layer-4 span {
-        margin: 0 auto 160px;
+        margin: 0 auto 20px;
     }
-    .footer-title {
-        font-size: 14px;
-        letter-spacing: 1.8px;
+    .viltrum-lineup-img {
+        max-width: 18rem;
     }
-    .footer-quote {
-        margin-top: 5px;
-        font-size: 5px;
-        letter-spacing: 1.4px;
+    .character-strip {
+        gap: 24px;
+        margin: 18px 0 18px;
+        flex-wrap: wrap;
     }
-    .footer-bottom {
-        margin-top: 12px;
-        font-size: 6px;
+    .character-strip img {
+        height: 8rem;
     }
-}
-@media (max-width: 350px) {
-    .home-overlay {
-        padding: 0 40px;
-    }
-    .home-overlay h2 {
-        font-size: 5px;
-    }
-    .home-content-line {
-        margin: 60px auto 20px;
-   }
-    .empire-visual {
-        gap: 180px;
+    .quotes-section {
+        gap: 20px;
     }
     .emperor-argal-quote, .coalition-quote {
-        width: 100px;
-        padding: 10px 12px;
-        font-size: 6px;
-        line-height: 1.2;
-        border-radius: 12px;
-        margin: 50px auto;
+        width: 90%;
+        max-width: 220px;
+        padding: 16px;
+        font-size: 13px;
+        border-radius: 10px;
+        margin: 26px auto;
     }
     .emperor-argal-quote::before,
     .coalition-quote::before {
-       left: 10px;
+        width: 36px;
+        height: 1.6px;
+        left: 16px;
+    }
+    .footer-title {
+        font-size: 16px;
+    }
+    .footer-quote {
+        font-size: 8.5px;
+        margin-top: 7px;
+    }
+    .footer-bottom {
+        font-size: 8.5px;
+        margin-top: 26px;
+    }
+}
+@media (max-width: 600px) {
+    .home-overlay h2 {
+        font-size: 15px;
+    }
+    .home-overlay {
+        padding: 0 16px;
+    }
+    .home-content-line {
+        margin: 18px auto 16px;
+    }
+    .layer-3, .layer-4 {
+        font-size: 26px;
+    }
+    .layer-4 span {
+        margin: 0 auto 16px;
     }
     .viltrum-lineup-img {
-        width: 16rem;
+        max-width: 15rem;
+    }
+    .character-strip {
+        gap: 20px;
+        margin: 15px 0 15px;
+        flex-wrap: wrap;
+    }
+    .character-strip img {
+        height: 7rem;
+    }
+    .quotes-section {
+        gap: 16px;
+    }
+    .emperor-argal-quote, .coalition-quote {
+        width: 90%;
+        max-width: 200px;
+        padding: 14px;
+        font-size: 12.5px;
+        border-radius: 8px;
+        margin: 22px auto;
+    }
+    .emperor-argal-quote::before,
+    .coalition-quote::before {
+        width: 30px;
+        height: 1.4px;
+        left: 14px;
+    }
+    .footer-title {
+        font-size: 14px;
+    }
+    .footer-quote {
+        font-size: 8px;
+        margin-top: 7px;
+    }
+    .footer-bottom {
+        font-size: 8px;
+        margin-top: 22px;
+    }
+}
+@media (max-width: 500px) {
+    .home-overlay h2 {
+        font-size: 14px;
+    }
+    .home-overlay {
+        padding: 0 14px;
+    }
+    .home-content-line {
+        margin: 15px auto 14px;
+    }
+    .layer-3, .layer-4 {
+        font-size: 22px;
+    }
+    .layer-4 span {
+        margin: 0 auto 14px;
+    }
+    .viltrum-lineup-img {
+        max-width: 13rem;
+    }
+    .character-strip {
+        gap: 16px;
+        margin: 12px 0 12px;
+        flex-wrap: wrap;
     }
     .character-strip img {
         height: 6rem;
     }
-    .layer-3, .layer-4 {
-        font-size: 20px;
+    .quotes-section {
+        gap: 13px;
     }
-    .layer-4 {
-        margin: 100px auto;
+    .emperor-argal-quote, .coalition-quote {
+        width: 90%;
+        max-width: 180px;
+        padding: 13px;
+        font-size: 12px;
+        border-radius: 8px;
+        margin: 18px auto;
+    }
+    .emperor-argal-quote::before,
+    .coalition-quote::before {
+        width: 26px;
+        height: 1.4px;
+        left: 13px;
+    }
+    .footer-title {
+        font-size: 13px;
+    }
+    .footer-quote {
+        font-size: 7.5px;
+        margin-top: 6px;
+    }
+    .footer-bottom {
+        font-size: 7.5px;
+        margin-top: 18px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+}
+@media (max-width: 425px) {
+    .home-overlay h2 {
+        font-size: 13px;
+    }
+    .home-overlay {
+        padding: 0 12px;
+    }
+    .home-content-line {
+        margin: 13px auto 12px;
+    }
+    .layer-3, .layer-4 {
+        font-size: 19px;
     }
     .layer-4 span {
-        margin: 0 auto 100px;
+        margin: 0 auto 12px;
     }
-    .layer-3 {
-        gap: 0;
+    .viltrum-lineup-img {
+        max-width: 11rem;
     }
-    .footer {
-        margin-top: 120px;
+    .character-strip {
+        gap: 14px;
+        margin: 10px 0 10px;
+        flex-wrap: wrap;
+    }
+    .character-strip img {
+        height: 5.2rem;
+    }
+    .quotes-section {
+        gap: 11px;
+    }
+    .emperor-argal-quote, .coalition-quote {
+        width: 90%;
+        max-width: 160px;
+        padding: 12px;
+        font-size: 11.5px;
+        border-radius: 6px;
+        margin: 15px auto;
+    }
+    .emperor-argal-quote::before,
+    .coalition-quote::before {
+        width: 22px;
+        height: 1.2px;
+        left: 12px;
     }
     .footer-title {
         font-size: 12px;
-        letter-spacing: 1.2px;
     }
     .footer-quote {
-        letter-spacing: 1.2px;
+        font-size: 7.5px;
+        margin-top: 6px;
     }
     .footer-bottom {
-        margin-top: 10px;
-        font-size: 5px;
+        font-size: 7.5px;
+        margin-top: 15px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
     }
 }
+@media (max-width: 350px) {
+    .home-overlay h2 {
+        font-size: 12px;
+    }
+    .home-overlay {
+        padding: 0 10px;
+    }
+    .home-content-line {
+        margin: 11px auto 10px;
+    }
+    .layer-3, .layer-4 {
+        font-size: 16px;
+    }
+    .layer-4 span {
+        margin: 0 auto 10px;
+    }
+    .viltrum-lineup-img {
+        max-width: 9rem;
+    }
+    .character-strip {
+        gap: 12px;
+        margin: 8px 0 8px;
+        flex-wrap: wrap;
+    }
+    .character-strip img {
+        height: 4.5rem;
+    }
+    .quotes-section {
+        gap: 9px;
+    }
+    .emperor-argal-quote, .coalition-quote {
+        width: 90%;
+        max-width: 140px;
+        padding: 10px;
+        font-size: 11px;
+        border-radius: 6px;
+        margin: 12px auto;
+    }
+    .emperor-argal-quote::before,
+    .coalition-quote::before {
+        width: 18px;
+        height: 1.2px;
+        left: 10px;
+    }
+    .footer-title {
+        font-size: 11px;
+    }
+    .footer-quote {
+        font-size: 7px;
+        margin-top: 6px;
+    }
+    .footer-bottom {
+        font-size: 7px;
+        margin-top: 12px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+}
+

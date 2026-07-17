@@ -1,6 +1,6 @@
 .genetics-heading {
     position: relative;
-    height: 600px;
+    height: 680px;
     width: 100%;
     overflow: hidden;
 }
@@ -36,16 +36,17 @@
     z-index: 2;
 }
 .genetics-quote {
-    font-size: 64px;
+    font-size: 140px;
     letter-spacing: 3px;
     color: #ffffffaf;
-    max-width: 800px;
+    width: 80%;
+    max-width: 1600px;
     line-height: 1.2;
     text-shadow: 0 0 10px rgba(0,0,0,0.8), 0 0 25px rgba(0,0,0,0.6), 0 0 40px rgba(0,0,0,0.5);
     transition: transform 1.0s ease;
 }
 .genetics-intro {
-    margin: 100px auto 40px;
+    margin: 100px auto 130px;
     position: relative;
 }
 .genetics-intro p {
@@ -57,10 +58,10 @@
     align-items: center;
 }
 .genetics-grid {
-    width: 30%;
+    width: 85%;
     margin: 100px auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
 }
 .trait-card {
@@ -74,12 +75,12 @@
 .trait-card h3 {
     color: #E50914;
     margin-bottom: 10px;
-    font-size: 5px;
+    font-size: 22px;
 }
 .trait-card p {
     color: #bbb;
     line-height: 1.6;
-    font-size: 5px;
+    font-size: 15px;
 }
 .trait-card:hover {
     transform: translateY(-8px);
@@ -87,7 +88,7 @@
 }
 .dna-section {
     width: 100%;
-    padding: 120px 0;
+    padding: 160px 0;
     text-align: center;
     background: linear-gradient(to bottom, #0a0a0a, #000);
 }
@@ -110,162 +111,35 @@
 }
 .genetics-final {
     text-align: center;
-    margin: 120px 0;
-    font-size: 20px;
+    margin: 130px 0 70px;
+    font-size: 36px;
     color: #888;
 }
-@media(max-width: 2900px) {
+@media (max-width: 2900px) {
     .genetics-heading {
-        height: 100vh;
+        height: 640px;
     }
     .genetics-quote {
-        max-width: 1900px;
-        font-size: 120px;
+        width: 80%;
+        max-width: 1500px;
+        font-size: 130px;
     }
     .genetics-overlay p {
-        font-size: 30px;
+        font-size: 32px;
         letter-spacing: 3px;
+    }
+    .genetics-intro {
+        font-size: 28px;
+        letter-spacing: 2.5px;
+        margin: 90px auto 110px;
     }
     .genetics-grid {
         width: 85%;
-        gap: 80px;
-    }
-    .trait-card {
-        padding: 50px;
-    }
-    .trait-card h3 {
-        font-size: 40px;
-    }
-    .trait-card p {
-        font-size: 30px;
-    }
-    .genetics-intro {
-        font-size: 30px;
-        letter-spacing: 2.5px;
-        margin: 100px auto 300px;
-    }
-    .genetics-intro p {
-        gap: 10px;
-    }
-    .dna-section {
-        padding: 450px 0;
-    }
-    .dna-text h2 {
-        font-size: 60px;
-        margin-bottom: 10px;
-    }
-    .dna-text p {
-        font-size: 35px;
-    }
-    .weakness-section h2 {
-        font-size: 60px;
-    }
-    .weakness-section li {
-        font-size: 35px;
-    }
-    .genetics-final {
-        margin: 400px 0 150px;
-        font-size: 38px;
-    }
-}
-@media(max-width: 2500px) {
-    .genetics-heading {
-        height: auto;
-    }
-    .genetics-quote {
-        font-size: 110px;
-    }
-    .genetics-overlay p {
-        font-size: 26px;
-    }
-    .genetics-intro {
-        font-size: 26px;
-        letter-spacing: 3px;
-        margin: 100px auto 275px;
-    }
-    .trait-card h3 {
-        font-size: 38px;
-    }
-    .trait-card p {
-        font-size: 28px;
-    }
-    .dna-text h2 {
-        font-size: 54px;
-        margin-bottom: 9px;
-    }
-    .dna-text p {
-        font-size: 32px;
-    }
-    .weakness-section h2 {
-        font-size: 54px;
-    }
-    .weakness-section li {
-        font-size: 32px;
-    }
-    .genetics-final {
-        margin: 375px 0 140px;
-        font-size: 35px;
-    }
-}
-@media(max-width: 2200px) {
-    .genetics-quote {
-        font-size: 95px;
-    }
-    .genetics-overlay p {
-        font-size: 24px;
-    }
-    .genetics-intro {
-        font-size: 23px;
-        margin: 100px auto 250px;
-    }
-    .genetics-grid {
-        gap: 75px;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 60px;
     }
     .trait-card {
         padding: 45px;
-    }
-    .trait-card h3 {
-        font-size: 36px;
-    }
-    .trait-card p {
-        font-size: 26px;
-    }
-    .dna-section {
-        padding: 400px 0;
-    }
-    .dna-text h2 {
-        margin-bottom: 8px;
-    }
-    .dna-text p {
-        font-size: 30px;
-    }
-    .weakness-section ul {
-        margin-top: 18px;
-    }
-    .weakness-section li {
-        font-size: 30px;
-        margin: 8px 0;
-    }
-    .genetics-final {
-        margin: 350px 0 130px;
-        font-size: 32px;
-    }
-}
-@media(max-width: 2000px) {
-    .genetics-quote {
-        font-size: 85px;
-    }
-    .genetics-overlay p {
-        font-size: 22px;
-        letter-spacing: 2.5px;
-    }
-    .genetics-intro {
-        font-size: 20px;
-        letter-spacing: 2.5px;
-        margin: 100px auto 225px;
-    }
-    .trait-card {
-        padding: 40px;
     }
     .trait-card h3 {
         font-size: 34px;
@@ -274,567 +148,961 @@
         font-size: 24px;
     }
     .dna-section {
-        padding: 375px 0;
+        padding: 140px 0;
     }
     .dna-text h2 {
-        font-size: 50px;
-        margin-bottom: 7px;
+        font-size: 54px;
     }
     .dna-text p {
-        font-size: 28px;
+        font-size: 30px;
     }
-    .weakness-section ul {
-        margin-top: 16px;
+    .weakness-section {
+        margin: 90px auto;
     }
     .weakness-section h2 {
-        font-size: 50px;
+        font-size: 54px;
     }
     .weakness-section li {
-        font-size: 28px;
-        margin: 7px 0;
+        font-size: 30px;
     }
     .genetics-final {
-        margin: 325px 0 130px;
-        font-size: 30px;
+        margin: 110px 0 60px;
+        font-size: 34px;
     }
 }
-@media (max-width: 1800px) {
+@media (max-width: 2500px) {
+    .genetics-heading {
+        height: 576px;
+    }
     .genetics-quote {
-        font-size: 80px;
+        width: 80%;
+        max-width: 1315px;
+        font-size: 113px;
     }
     .genetics-overlay p {
-        font-size: 20px;
+        font-size: 29px;
+        letter-spacing: 2.7px;
     }
     .genetics-intro {
-        font-size: 18px;
+        font-size: 25px;
+        letter-spacing: 2.2px;
+        margin: 79px auto 96px;
+    }
+    .genetics-grid {
+        width: 85%;
+        grid-template-columns: repeat(auto-fit, minmax(257px, 1fr));
+        gap: 53px;
     }
     .trait-card {
-        padding: 35px;
+        padding: 40px;
     }
     .trait-card h3 {
-        font-size: 30px;
+        font-size: 31px;
+    }
+    .trait-card p {
+        font-size: 22px;
     }
     .dna-section {
-        padding: 300px 0;
+        padding: 122px 0;
     }
     .dna-text h2 {
-        font-size: 46px;
-        margin-bottom: 6px;
+        font-size: 48px;
+    }
+    .dna-text p {
+        font-size: 27px;
+    }
+    .weakness-section {
+        margin: 79px auto;
+    }
+    .weakness-section h2 {
+        font-size: 48px;
+    }
+    .weakness-section li {
+        font-size: 27px;
+    }
+    .genetics-final {
+        margin: 96px 0 53px;
+        font-size: 31px;
+    }
+}
+@media (max-width: 2200px) {
+    .genetics-heading {
+        height: 529px;
+    }
+    .genetics-quote {
+        width: 80%;
+        max-width: 1177px;
+        font-size: 100px;
+    }
+    .genetics-overlay p {
+        font-size: 26px;
+        letter-spacing: 2.5px;
+    }
+    .genetics-intro {
+        font-size: 23px;
+        letter-spacing: 2px;
+        margin: 71px auto 86px;
+    }
+    .genetics-grid {
+        width: 85%;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 48px;
+    }
+    .trait-card {
+        padding: 36px;
+    }
+    .trait-card h3 {
+        font-size: 28px;
+    }
+    .trait-card p {
+        font-size: 20px;
+    }
+    .dna-section {
+        padding: 109px 0;
+    }
+    .dna-text h2 {
+        font-size: 43px;
     }
     .dna-text p {
         font-size: 25px;
     }
     .weakness-section {
-        margin: 80px auto;
+        margin: 71px auto;
     }
     .weakness-section h2 {
-        font-size: 46px;
+        font-size: 43px;
     }
     .weakness-section li {
         font-size: 25px;
     }
     .genetics-final {
+        margin: 86px 0 48px;
         font-size: 28px;
     }
 }
-@media (max-width: 1600px) {
+@media (max-width: 2000px) {
+    .genetics-heading {
+        height: 497px;
+    }
     .genetics-quote {
-        font-size: 70px;
+        width: 80%;
+        max-width: 1084px;
+        font-size: 91px;
     }
     .genetics-overlay p {
-        font-size: 18px;
-    }
-    .genetics-intro {
-        font-size: 16px;
-        letter-spacing: 2.2px;
-        margin: 90px auto 200px;
-    }
-    .genetics-grid {
-        gap: 70px;
-    }
-    .trait-card h3 {
-        font-size: 27px;
-    }
-    .trait-card p {
-        font-size: 22px;
-        line-height: 1.4;
-    }
-    .dna-section {
-        padding: 325px 0;
-    }
-    .dna-text h2 {
-        font-size: 42px;
-    }
-    .dna-text p {
-        font-size: 23px;
-    }
-    .weakness-section ul {
-        margin-top: 14px;
-    }
-    .weakness-section h2 {
-        font-size: 42px;
-    }
-    .weakness-section li {
-        font-size: 23px;
-        margin: 6px 0;
-    }
-    .genetics-final {
         font-size: 25px;
-    }
-}
-@media (max-width: 1400px) {
-    .genetics-quote {
-        font-size: 60px;
-    }
-    .genetics-overlay p {
-        font-size: 15px;
         letter-spacing: 2.3px;
     }
     .genetics-intro {
-        font-size: 14px;
-        letter-spacing: 2.2px;
-        margin: 90px auto 200px;
+        font-size: 22px;
+        letter-spacing: 1.9px;
+        margin: 66px auto 79px;
     }
     .genetics-grid {
-        gap: 65px;
+        width: 85%;
+        grid-template-columns: repeat(auto-fit, minmax(229px, 1fr));
+        gap: 44px;
+    }
+    .trait-card {
+        padding: 33px;
+    }
+    .trait-card h3 {
+        font-size: 26px;
+    }
+    .trait-card p {
+        font-size: 19px;
+    }
+    .dna-section {
+        padding: 100px 0;
+    }
+    .dna-text h2 {
+        font-size: 40px;
+    }
+    .dna-text p {
+        font-size: 24px;
+    }
+    .weakness-section {
+        margin: 66px auto;
+    }
+    .weakness-section h2 {
+        font-size: 40px;
+    }
+    .weakness-section li {
+        font-size: 24px;
+    }
+    .genetics-final {
+        margin: 79px 0 45px;
+        font-size: 26px;
+    }
+}
+@media (max-width: 1800px) {
+    .genetics-heading {
+        height: 465px;
+    }
+    .genetics-quote {
+        width: 80%;
+        max-width: 992px;
+        font-size: 82px;
+    }
+    .genetics-overlay p {
+        font-size: 23px;
+        letter-spacing: 2.2px;
+    }
+    .genetics-intro {
+        font-size: 21px;
+        letter-spacing: 1.8px;
+        margin: 61px auto 72px;
+    }
+    .genetics-grid {
+        width: 85%;
+        grid-template-columns: repeat(auto-fit, minmax(218px, 1fr));
+        gap: 41px;
     }
     .trait-card {
         padding: 30px;
     }
     .trait-card h3 {
-        font-size: 22px;
-        margin-bottom: 8px;
+        font-size: 24px;
     }
     .trait-card p {
-        font-size: 19px;
-        line-height: 1.3;
+        font-size: 18px;
     }
     .dna-section {
-        padding: 275px 0;
+        padding: 92px 0;
     }
     .dna-text h2 {
-        font-size: 38px;
-        margin-bottom: 5px;
+        font-size: 37px;
     }
     .dna-text p {
-        font-size: 20px;
+        font-size: 22px;
     }
     .weakness-section {
-        margin: 70px auto;
+        margin: 61px auto;
     }
     .weakness-section h2 {
-        font-size: 38px;
+        font-size: 37px;
     }
     .weakness-section li {
-        font-size: 20px;
+        font-size: 22px;
     }
     .genetics-final {
-        margin: 300px 0 130px;
-        font-size: 20px;
+        margin: 72px 0 42px;
+        font-size: 24px;
     }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
+    .genetics-heading {
+        height: 433px;
+    }
     .genetics-quote {
-        font-size: 50px;
+        width: 80%;
+        max-width: 899px;
+        font-size: 74px;
     }
     .genetics-overlay p {
-        font-size: 13px;
-        letter-spacing: 2.2px;
+        font-size: 22px;
+        letter-spacing: 2px;
     }
     .genetics-intro {
-        font-size: 12px;
-        letter-spacing: 2px;
-        margin: 80px auto 175px;
+        font-size: 20px;
+        letter-spacing: 1.7px;
+        margin: 56px auto 66px;
     }
     .genetics-grid {
-        gap: 50px;
+        width: 85%;
+        grid-template-columns: repeat(auto-fit, minmax(206px, 1fr));
+        gap: 37px;
+    }
+    .trait-card {
+        padding: 28px;
+    }
+    .trait-card h3 {
+        font-size: 23px;
+    }
+    .trait-card p {
+        font-size: 17px;
+    }
+    .dna-section {
+        padding: 83px 0;
+    }
+    .dna-text h2 {
+        font-size: 34px;
+    }
+    .dna-text p {
+        font-size: 21px;
+    }
+    .weakness-section {
+        margin: 56px auto;
+    }
+    .weakness-section h2 {
+        font-size: 34px;
+    }
+    .weakness-section li {
+        font-size: 21px;
+    }
+    .genetics-final {
+        margin: 66px 0 38px;
+        font-size: 23px;
+    }
+}
+@media (max-width: 1400px) {
+    .genetics-heading {
+        height: 401px;
+    }
+    .genetics-quote {
+        width: 80%;
+        max-width: 807px;
+        font-size: 65px;
+    }
+    .genetics-overlay p {
+        font-size: 20px;
+        letter-spacing: 1.9px;
+    }
+    .genetics-intro {
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        margin: 50px auto 59px;
+    }
+    .genetics-grid {
+        width: 85%;
+        grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+        gap: 34px;
     }
     .trait-card {
         padding: 25px;
     }
     .trait-card h3 {
-        font-size: 20px;
+        font-size: 21px;
     }
     .trait-card p {
-        font-size: 17px;
+        font-size: 16px;
     }
     .dna-section {
-        padding: 225px 0;
+        padding: 74px 0;
     }
     .dna-text h2 {
-        font-size: 32px;
+        font-size: 31px;
     }
     .dna-text p {
-        font-size: 16px;
+        font-size: 19px;
+    }
+    .weakness-section {
+        margin: 50px auto;
     }
     .weakness-section h2 {
-        font-size: 32px;
+        font-size: 31px;
     }
     .weakness-section li {
-        font-size: 16px;
+        font-size: 19px;
     }
     .genetics-final {
-        margin: 275px 0 130px;
-        font-size: 17px;
+        margin: 59px 0 35px;
+        font-size: 21px;
     }
 }
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
+    .genetics-heading {
+        height: 370px;
+    }
+    .genetics-quote {
+        width: 80%;
+        max-width: 714px;
+        font-size: 57px;
+    }
+    .genetics-overlay p {
+        font-size: 18px;
+        letter-spacing: 1.7px;
+    }
     .genetics-intro {
-        font-size: 11px;
+        font-size: 17px;
+        letter-spacing: 1.4px;
+        margin: 45px auto 52px;
     }
     .genetics-grid {
-        gap: 45px;
+        width: 85%;
+        grid-template-columns: repeat(auto-fit, minmax(183px, 1fr));
+        gap: 30px;
     }
     .trait-card {
-        padding: 25px 20px;
+        padding: 22px;
     }
     .trait-card h3 {
         font-size: 19px;
     }
     .trait-card p {
-        font-size: 16px;
+        font-size: 15px;
     }
     .dna-section {
-        padding: 200px 0;
+        padding: 65px 0;
+    }
+    .dna-text h2 {
+        font-size: 28px;
+    }
+    .dna-text p {
+        font-size: 18px;
+    }
+    .weakness-section {
+        margin: 45px auto;
+    }
+    .weakness-section h2 {
+        font-size: 28px;
+    }
+    .weakness-section li {
+        font-size: 18px;
+    }
+    .genetics-final {
+        margin: 52px 0 32px;
+        font-size: 19px;
+    }
+}
+@media (max-width: 1100px) {
+    .genetics-heading {
+        height: 354px;
+    }
+    .genetics-quote {
+        width: 80%;
+        max-width: 668px;
+        font-size: 52px;
+    }
+    .genetics-overlay p {
+        font-size: 18px;
+        letter-spacing: 1.6px;
+    }
+    .genetics-intro {
+        font-size: 16px;
+        letter-spacing: 1.3px;
+        margin: 42px auto 49px;
+    }
+    .genetics-grid {
+        width: 85%;
+        grid-template-columns: repeat(auto-fit, minmax(178px, 1fr));
+        gap: 29px;
+    }
+    .trait-card {
+        padding: 21px;
+    }
+    .trait-card h3 {
+        font-size: 18px;
+    }
+    .trait-card p {
+        font-size: 14px;
+    }
+    .dna-section {
+        padding: 61px 0;
+    }
+    .dna-text h2 {
+        font-size: 26px;
+    }
+    .dna-text p {
+        font-size: 17px;
+    }
+    .weakness-section {
+        margin: 42px auto;
+    }
+    .weakness-section h2 {
+        font-size: 26px;
+    }
+    .weakness-section li {
+        font-size: 17px;
+    }
+    .genetics-final {
+        margin: 49px 0 30px;
+        font-size: 18px;
     }
 }
 @media (max-width: 1000px) {
+    .genetics-heading {
+        height: 338px;
+    }
     .genetics-quote {
-        font-size: 40px;
+        width: 80%;
+        max-width: 622px;
+        font-size: 48px;
     }
     .genetics-overlay p {
-        font-size: 10px;
-        letter-spacing: 2px;
+        font-size: 17px;
+        letter-spacing: 1.6px;
     }
     .genetics-intro {
-        font-size: 9px;
-        letter-spacing: 1.7px;
-        margin: 60px auto 125px;
-    }
-    .genetics-grid {
-        gap: 40px;
-    }
-    .trait-card {
-        padding: 20px 15px;
-        border-radius: 12px;
-    }
-    .trait-card h3 {
         font-size: 16px;
-        margin-bottom: 6px;
-    }
-    .trait-card p {
-        font-size: 12px;
-    }
-    .dna-section {
-        padding: 175px 0;
-    }
-    .dna-text h2 {
-        font-size: 28px;
-        margin-bottom: 4px;
-    }
-    .dna-text p {
-        font-size: 14px;
-    }
-    .weakness-section {
-        margin: 60px auto;
-    }
-    .weakness-section ul {
-        margin-top: 12px;
-    }
-    .weakness-section h2 {
-        font-size: 28px;
-    }
-    .weakness-section li {
-        font-size: 14px;
-        margin: 5px 0;
-    }
-    .genetics-final {
-        margin: 250px 0 130px;
-        font-size: 14px;
-    }
-}
-@media (max-width: 800px) {
-    .genetics-quote {
-        font-size: 35px;
-        letter-spacing: 2.5px;
-    }
-    .genetics-overlay p {
-        font-size: 8px;
-        letter-spacing: 1.8px;
-    }
-    .genetics-intro {
-        font-size: 7px;
-        letter-spacing: 1.4px;
-        margin: 50px auto 125px;
-    }
-    .genetics-grid {
-        gap: 35px;
-    }
-    .trait-card {
-        padding: 15px;
-        border-radius: 10px;
-    }
-    .trait-card h3 {
-        font-size: 12px;
-    }
-    .trait-card p {
-        font-size: 10px;
-        line-height: 1.4;
-    }
-    .dna-section {
-        padding: 140px 0;
-    }
-    .dna-text h2 {
-        font-size: 25px;
-    }
-    .dna-text p {
-        font-size: 12px;
-    }
-    .weakness-section ul {
-        margin-top: 10px;
-    }
-    .weakness-section h2 {
-        font-size: 25px;
-    }
-    .weakness-section li {
-        font-size: 12px;
-        margin: 4px 0;
-    }
-    .genetics-final {
-        margin: 225px 0 130px;
-        font-size: 11px;
-    }
-}
-@media (max-width: 600px) {
-    .genetics-quote {
-        font-size: 25px;
-        letter-spacing: 2.2px;
-    }
-    .genetics-overlay p {
-        font-size: 6px;
-        letter-spacing: 1.5px;
-    }
-    .genetics-intro {
-        font-size: 5px;
-        letter-spacing: 1.2px;
-        margin: 40px auto 100px;
-    }
-    .genetics-grid {
-        margin: 80px auto
-    }
-    .trait-card {
-        padding: 10px;
-    }
-    .trait-card h3 {
-        font-size: 9px;
-        margin-bottom: 5px;
-    }
-    .trait-card p {
-        font-size: 7px;
-    }
-    .dna-section {
-        padding: 80px 0;
-    }
-    .dna-text h2 {
-        font-size: 21px;
-        margin-bottom: 3px;
-    }
-    .dna-text p {
-        font-size: 9px;
-    }
-    .weakness-section {
-        margin: 50px auto;
-    }
-    .weakness-section ul {
-        margin-top: 8px;
-    }
-    .weakness-section h2 {
-        font-size: 21px;
-    }
-    .weakness-section li {
-        font-size: 10px;
-        margin: 3px 0;
-    }
-    .genetics-final {
-        margin: 200px 0 100px;
-        font-size: 9px;
-    }
-}
-@media (max-width: 500px) {
-    .genetics-final {
-        margin: 175px 0 90px;
-        font-size: 8px;
-    }
-}
-@media (max-width: 450px) {
-    .genetics-quote {
-        font-size: 18px;
-        letter-spacing: 2px;
-    }
-    .genetics-overlay p {
-        font-size: 4px;
         letter-spacing: 1.3px;
-    }
-    .genetics-intro {
-        font-size: 4px;
-        letter-spacing: 0.8px;
-        margin: 30px auto 100px;
-    }
-    .genetics-intro p {
-        gap: 5px;
+        margin: 40px auto 45px;
     }
     .genetics-grid {
-        gap: 30px;
-        margin: 50px auto;
+        width: 85%;
+        grid-template-columns: repeat(auto-fit, minmax(172px, 1fr));
+        gap: 27px;
     }
     .trait-card {
-        padding: 8px;
-        border-radius: 8px;
+        padding: 20px;
     }
     .trait-card h3 {
-        font-size: 7px;
-        margin-bottom: 4px;
+        font-size: 17px;
     }
     .trait-card p {
-        font-size: 5px;
-        line-height: 1.3;
+        font-size: 14px;
     }
     .dna-section {
-        padding: 70px 0;
+        padding: 57px 0;
     }
     .dna-text h2 {
-        font-size: 16px;
-        margin-bottom: 2px;
+        font-size: 24px;
     }
     .dna-text p {
-        font-size: 7px;
+        font-size: 16px;
     }
     .weakness-section {
         margin: 40px auto;
     }
-    .weakness-section ul {
-        margin-top: 6px;
-    }
     .weakness-section h2 {
+        font-size: 24px;
+    }
+    .weakness-section li {
         font-size: 16px;
     }
-    .weakness-section li {
-        font-size: 8px;
-        margin: 2px 0;
-    }
     .genetics-final {
-        margin: 150px 0 80px;
-        font-size: 6px;
+        margin: 45px 0 28px;
+        font-size: 17px;
     }
 }
-@media(max-width: 350px) {
-    .genetics-intro {
-        font-size: 3px;
-        letter-spacing: 0.5px;
-        margin: 30px auto 50px;
+@media (max-width: 800px) {
+    .genetics-heading {
+        height: 306px;
     }
-    .genetics-grid {
-        gap: 25px;
-    }
-    .trait-card {
-        padding: 6px;
-        border-radius: 5px;
-    }
-    .trait-card h3 {
-        font-size: 5px;
-    }
-    .trait-card p {
-        font-size: 4px;
-    }
-    .dna-section {
-        padding: 50px 0;
-    }
-    .dna-text h2 {
-        font-size: 12px;
-        margin-bottom: 0;
-    }
-    .dna-text p {
-        font-size: 5px;
-    }
-    .weakness-section {
-        margin: 30px auto;
-    }
-    .weakness-section ul {
-        margin-top: 4px;
-    }
-    .weakness-section h2 {
-        font-size: 12px;
-    }
-    .weakness-section li {
-        font-size: 6px;
-        margin: 0;
-    }
-    .genetics-final {
-        margin: 125px 0 70px;
-        font-size: 5px;
-    }
-}
-@media (max-width: 325px) {
     .genetics-quote {
-        font-size: 12px;
-        letter-spacing: 1.8px;
+        width: 80%;
+        max-width: 530px;
+        font-size: 39px;
     }
     .genetics-overlay p {
-        font-size: 2.5px;
-        letter-spacing: 1.2px;
+        font-size: 15px;
+        letter-spacing: 1.4px;
+    }
+    .genetics-intro {
+        font-size: 14px;
+        letter-spacing: 1.1px;
+        margin: 34px auto 38px;
+    }
+    .genetics-grid {
+        width: 85%;
+        grid-template-columns: repeat(auto-fit, minmax(161px, 1fr));
+        gap: 23px;
+    }
+    .trait-card {
+        padding: 17px;
+    }
+    .trait-card h3 {
+        font-size: 16px;
+    }
+    .trait-card p {
+        font-size: 13px;
     }
     .dna-section {
-        padding: 15px 0;
+        padding: 48px 0;
     }
     .dna-text h2 {
-        font-size: 9px;
+        font-size: 21px;
     }
-    .weakness-section ul {
-        margin-top: 3px;
+    .dna-text p {
+        font-size: 15px;
+    }
+    .weakness-section {
+        margin: 34px auto;
     }
     .weakness-section h2 {
-        font-size: 9px;
+        font-size: 21px;
     }
     .weakness-section li {
-        font-size: 5px;
+        font-size: 15px;
     }
-}
-@media (max-width: 300px) {
     .genetics-final {
-        font-size: 4px;
+        margin: 38px 0 25px;
+        font-size: 16px;
     }
 }
-@media (max-width: 260px) {
+@media (max-width: 600px) {
+    .genetics-heading {
+        height: 274px;
+    }
+    .genetics-quote {
+        width: 80%;
+        max-width: 437px;
+        font-size: 31px;
+    }
+    .genetics-overlay p {
+        font-size: 14px;
+        letter-spacing: 1.3px;
+    }
+    .genetics-intro {
+        font-size: 13px;
+        letter-spacing: 1px;
+        margin: 29px auto 32px;
+    }
     .genetics-grid {
+        width: 85%;
+        grid-template-columns: repeat(auto-fit, minmax(149px, 1fr));
         gap: 20px;
     }
     .trait-card {
-        padding: 5px;
+        padding: 15px;
     }
     .trait-card h3 {
-        font-size: 4px;
-        margin-bottom: 3px;
+        font-size: 14px;
     }
     .trait-card p {
-        font-size: 3px;
-        line-height: 1.2;
+        font-size: 12px;
     }
     .dna-section {
-        padding: 10px 0;
+        padding: 39px 0;
     }
     .dna-text h2 {
-        font-size: 7px;
+        font-size: 18px;
     }
     .dna-text p {
-        font-size: 4px;
+        font-size: 13px;
+    }
+    .weakness-section {
+        margin: 29px auto;
+    }
+    .weakness-section h2 {
+        font-size: 18px;
+    }
+    .weakness-section li {
+        font-size: 13px;
+    }
+    .genetics-final {
+        margin: 32px 0 22px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 500px) {
+    .genetics-heading {
+        height: 258px;
+    }
+    .genetics-quote {
+        width: 80%;
+        max-width: 391px;
+        font-size: 26px;
+    }
+    .genetics-overlay p {
+        font-size: 13px;
+        letter-spacing: 1.2px;
+    }
+    .genetics-intro {
+        font-size: 13px;
+        letter-spacing: 1px;
+        margin: 26px auto 28px;
+    }
+    .genetics-grid {
+        width: 85%;
+        grid-template-columns: repeat(auto-fit, minmax(144px, 1fr));
+        gap: 18px;
+    }
+    .trait-card {
+        padding: 13px;
+    }
+    .trait-card h3 {
+        font-size: 13px;
+    }
+    .trait-card p {
+        font-size: 11px;
+    }
+    .dna-section {
+        padding: 35px 0;
+    }
+    .dna-text h2 {
+        font-size: 17px;
+    }
+    .dna-text p {
+        font-size: 13px;
+    }
+    .weakness-section {
+        margin: 26px auto;
+    }
+    .weakness-section h2 {
+        font-size: 17px;
+    }
+    .weakness-section li {
+        font-size: 13px;
+    }
+    .genetics-final {
+        margin: 28px 0 20px;
+        font-size: 13px;
+    }
+}
+@media (max-width: 450px) {
+    .genetics-heading {
+        height: 250px;
+    }
+    .genetics-quote {
+        width: 80%;
+        max-width: 368px;
+        font-size: 24px;
+    }
+    .genetics-overlay p {
+        font-size: 13px;
+        letter-spacing: 1.1px;
+    }
+    .genetics-intro {
+        font-size: 12px;
+        letter-spacing: 0.9px;
+        margin: 25px auto 26px;
+    }
+    .genetics-grid {
+        width: 85%;
+        grid-template-columns: repeat(auto-fit, minmax(141px, 1fr));
+        gap: 17px;
+    }
+    .trait-card {
+        padding: 13px;
+    }
+    .trait-card h3 {
+        font-size: 13px;
+    }
+    .trait-card p {
+        font-size: 11px;
+    }
+    .dna-section {
+        padding: 32px 0;
+    }
+    .dna-text h2 {
+        font-size: 16px;
+    }
+    .dna-text p {
+        font-size: 12px;
     }
     .weakness-section {
         margin: 25px auto;
     }
     .weakness-section h2 {
-        font-size: 7px;
+        font-size: 16px;
     }
     .weakness-section li {
-        font-size: 4px;
+        font-size: 12px;
+    }
+    .genetics-final {
+        margin: 26px 0 19px;
+        font-size: 13px;
     }
 }
+@media (max-width: 350px) {
+    .genetics-heading {
+        height: 234px;
+    }
+    .genetics-quote {
+        width: 80%;
+        max-width: 322px;
+        font-size: 20px;
+    }
+    .genetics-overlay p {
+        font-size: 12px;
+        letter-spacing: 1.1px;
+    }
+    .genetics-intro {
+        font-size: 12px;
+        letter-spacing: 0.9px;
+        margin: 22px auto 23px;
+    }
+    .genetics-grid {
+        width: 85%;
+        grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+        gap: 16px;
+    }
+    .trait-card {
+        padding: 11px;
+    }
+    .trait-card h3 {
+        font-size: 12px;
+    }
+    .trait-card p {
+        font-size: 10px;
+    }
+    .dna-section {
+        padding: 28px 0;
+    }
+    .dna-text h2 {
+        font-size: 14px;
+    }
+    .dna-text p {
+        font-size: 12px;
+    }
+    .weakness-section {
+        margin: 22px auto;
+    }
+    .weakness-section h2 {
+        font-size: 14px;
+    }
+    .weakness-section li {
+        font-size: 12px;
+    }
+    .genetics-final {
+        margin: 23px 0 18px;
+        font-size: 12px;
+    }
+}
+@media (max-width: 325px) {
+    .genetics-heading {
+        height: 230px;
+    }
+    .genetics-quote {
+        width: 80%;
+        max-width: 310px;
+        font-size: 19px;
+    }
+    .genetics-overlay p {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    .genetics-intro {
+        font-size: 11px;
+        letter-spacing: 0.8px;
+        margin: 22px auto 22px;
+    }
+    .genetics-grid {
+        width: 85%;
+        grid-template-columns: repeat(auto-fit, minmax(134px, 1fr));
+        gap: 15px;
+    }
+    .trait-card {
+        padding: 11px;
+    }
+    .trait-card h3 {
+        font-size: 12px;
+    }
+    .trait-card p {
+        font-size: 10px;
+    }
+    .dna-section {
+        padding: 27px 0;
+    }
+    .dna-text h2 {
+        font-size: 14px;
+    }
+    .dna-text p {
+        font-size: 11px;
+    }
+    .weakness-section {
+        margin: 22px auto;
+    }
+    .weakness-section h2 {
+        font-size: 14px;
+    }
+    .weakness-section li {
+        font-size: 11px;
+    }
+    .genetics-final {
+        margin: 22px 0 17px;
+        font-size: 12px;
+    }
+}
+@media (max-width: 300px) {
+    .genetics-heading {
+        height: 226px;
+    }
+    .genetics-quote {
+        width: 80%;
+        max-width: 298px;
+        font-size: 18px;
+    }
+    .genetics-overlay p {
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+    .genetics-intro {
+        font-size: 11px;
+        letter-spacing: 0.8px;
+        margin: 21px auto 21px;
+    }
+    .genetics-grid {
+        width: 85%;
+        grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
+        gap: 15px;
+    }
+    .trait-card {
+        padding: 11px;
+    }
+    .trait-card h3 {
+        font-size: 11px;
+    }
+    .trait-card p {
+        font-size: 10px;
+    }
+    .dna-section {
+        padding: 26px 0;
+    }
+    .dna-text h2 {
+        font-size: 14px;
+    }
+    .dna-text p {
+        font-size: 11px;
+    }
+    .weakness-section {
+        margin: 21px auto;
+    }
+    .weakness-section h2 {
+        font-size: 14px;
+    }
+    .weakness-section li {
+        font-size: 11px;
+    }
+    .genetics-final {
+        margin: 21px 0 17px;
+        font-size: 11px;
+    }
+}
+@media (max-width: 260px) {
+    .genetics-heading {
+        height: 220px;
+    }
+    .genetics-quote {
+        width: 80%;
+        max-width: 280px;
+        font-size: 16px;
+    }
+    .genetics-overlay p {
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+    .genetics-intro {
+        font-size: 11px;
+        letter-spacing: 0.8px;
+        margin: 20px auto 20px;
+    }
+    .genetics-grid {
+        width: 85%;
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        gap: 14px;
+    }
+    .trait-card {
+        padding: 10px;
+    }
+    .trait-card h3 {
+        font-size: 11px;
+    }
+    .trait-card p {
+        font-size: 10px;
+    }
+    .dna-section {
+        padding: 24px 0;
+    }
+    .dna-text h2 {
+        font-size: 13px;
+    }
+    .dna-text p {
+        font-size: 11px;
+    }
+    .weakness-section {
+        margin: 20px auto;
+    }
+    .weakness-section h2 {
+        font-size: 13px;
+    }
+    .weakness-section li {
+        font-size: 11px;
+    }
+    .genetics-final {
+        margin: 20px 0 16px;
+        font-size: 11px;
+    }
+}
+

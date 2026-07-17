@@ -35,10 +35,11 @@
 }
 .conquests-quote {
     font-family: 'Anton', sans-serif;
-    font-size: 64px;
+    font-size: 165px;
     letter-spacing: 3px;
     color: #ffffffaf;
-    max-width: 1000px;
+    width: 80%;
+    max-width: 1300px;
     text-shadow:
         0 0 10px rgba(0,0,0,0.8),
         0 0 25px rgba(0,0,0,0.6),
@@ -51,12 +52,12 @@
 }
 .conquests-hero {
     text-align: center;
-    padding: 120px 20px 80px;
+    padding: 130px 20px 75px;
 }
 
 .conquests-hero h1 {
     font-family: 'Anton', sans-serif;
-    font-size: 90px;
+    font-size: 185px;
     letter-spacing: 5px;
     color: #fff;
 }
@@ -145,403 +146,694 @@
 }
 @media (max-width: 2900px) {
     .conquests-quote {
-    font-size: 120px;
-    letter-spacing: 3px;
+        font-size: 150px;
     }
     .conquests-hero {
-        margin-bottom: 300px;
+        margin-bottom: 120px;
+        padding: 100px 20px 70px;
     }
     .conquests-hero h1 {
-    font-size: 150px;
+        font-size: 170px;
+        letter-spacing: 5px;
     }
     .subtitle {
-        font-size: 30px;
+        font-size: 32px;
     }
     .timeline-item {
-        padding: 40px 60px;
+        padding: 50px 50px;
+    }
+    .timeline-item::before {
+        top: 50px;
     }
     .timeline-content {
-        padding: 35px;
+        padding: 38px;
     }
     .timeline-content img {
-        height: 450px;
-        margin-bottom: 40px;
+        height: 480px;
+        margin-bottom: 42px;
     }
     .timeline-content h2 {
-        font-size: 50px;
+        font-size: 52px;
         margin-bottom: 20px;
     }
     .timeline-content p {
-        font-size: 30px;
-        line-height: 1.5;
-        margin-bottom: 10px;
+        font-size: 32px;
     }
 }
 @media (max-width: 2500px) {
+    .conquests-quote {
+        font-size: 129px;
+    }
+    .conquests-hero {
+        margin-bottom: 104px;
+        padding: 88px 20px 62px;
+    }
+    .conquests-hero h1 {
+        font-size: 147px;
+        letter-spacing: 4.4px;
+    }
+    .subtitle {
+        font-size: 29px;
+    }
+    .timeline-item {
+        padding: 44px 44px;
+    }
+    .timeline-item::before {
+        top: 45px;
+    }
+    .timeline-content {
+        padding: 34px;
+    }
     .timeline-content img {
-        height: 400px;
-        margin-bottom: 35px;
+        height: 413px;
+        margin-bottom: 36px;
     }
     .timeline-content h2 {
         font-size: 45px;
+        margin-bottom: 17px;
     }
     .timeline-content p {
-        font-size: 28px;
+        font-size: 29px;
     }
 }
 @media (max-width: 2300px) {
+    .conquests-quote {
+        font-size: 119px;
+    }
+    .conquests-hero {
+        margin-bottom: 96px;
+        padding: 82px 20px 58px;
+    }
+    .conquests-hero h1 {
+        font-size: 135px;
+        letter-spacing: 4.1px;
+    }
+    .subtitle {
+        font-size: 27px;
+    }
+    .timeline-item {
+        padding: 41px 41px;
+    }
+    .timeline-item::before {
+        top: 42px;
+    }
+    .timeline-content {
+        padding: 32px;
+    }
     .timeline-content img {
-        height: 350px;
-        margin-bottom: 30px;
+        height: 380px;
+        margin-bottom: 33px;
     }
     .timeline-content h2 {
-        font-size: 43px;
+        font-size: 42px;
+        margin-bottom: 16px;
     }
     .timeline-content p {
-        font-size: 26px;
+        font-size: 27px;
     }
 }
 @media (max-width: 2000px) {
     .conquests-quote {
-        font-size: 100px;
+        font-size: 103px;
     }
     .conquests-hero {
-        margin-bottom: 200px;
+        margin-bottom: 84px;
+        padding: 74px 20px 53px;
     }
     .conquests-hero h1 {
-    font-size: 120px;
+        font-size: 118px;
+        letter-spacing: 3.6px;
     }
     .subtitle {
-        font-size: 25px;
+        font-size: 24px;
+    }
+    .timeline-item {
+        padding: 37px 37px;
+    }
+    .timeline-item::before {
+        top: 38px;
+    }
+    .timeline-content {
+        padding: 28px;
     }
     .timeline-content img {
-        height: 310px;
-        margin-bottom: 35px;
+        height: 329px;
+        margin-bottom: 28px;
     }
     .timeline-content h2 {
-        font-size: 40px;
+        font-size: 37px;
+        margin-bottom: 14px;
     }
     .timeline-content p {
         font-size: 24px;
-        line-height: 1.4;
-        margin-bottom: 0px;
     }
 }
 @media (max-width: 1800px) {
+    .conquests-quote {
+        font-size: 93px;
+    }
+    .conquests-hero {
+        margin-bottom: 76px;
+        padding: 68px 20px 49px;
+    }
+    .conquests-hero h1 {
+        font-size: 107px;
+        letter-spacing: 3.3px;
+    }
+    .subtitle {
+        font-size: 23px;
+    }
+    .timeline-item {
+        padding: 34px 34px;
+    }
+    .timeline-item::before {
+        top: 36px;
+    }
+    .timeline-content {
+        padding: 26px;
+    }
     .timeline-content img {
-        height: 265px;
-        margin-bottom: 30px;
+        height: 296px;
+        margin-bottom: 25px;
     }
     .timeline-content h2 {
-        font-size: 38px;
-        margin-bottom: 18px;
+        font-size: 34px;
+        margin-bottom: 13px;
     }
     .timeline-content p {
-        font-size: 22px;
-        line-height: 1.3;
+        font-size: 23px;
     }
 }
 @media (max-width: 1600px) {
     .conquests-quote {
-        font-size: 80px;
+        font-size: 82px;
+    }
+    .conquests-hero {
+        margin-bottom: 68px;
+        padding: 62px 20px 45px;
     }
     .conquests-hero h1 {
-        font-size: 100px;
-        letter-spacing: 4.5px;
+        font-size: 95px;
+        letter-spacing: 3px;
     }
     .subtitle {
-        font-size: 22px;
-        letter-spacing: 2px;
-        margin-top: 5px;
+        font-size: 21px;
     }
     .timeline-item {
-        padding: 40px 50px;
+        padding: 31px 31px;
+    }
+    .timeline-item::before {
+        top: 33px;
     }
     .timeline-content {
-        padding: 30px;
+        padding: 24px;
     }
     .timeline-content img {
-        height: 225px;
-        margin-bottom: 20px;
-    }
-    .timeline-content h2 {
-        font-size: 32px;
-        margin-bottom: 18px;
-    }
-    .timeline-content p {
-        font-size: 18px;
-        line-height: 1.3;
-    }
-}
-@media (max-width: 1400px) {
-    .timeline-content {
-        padding: 25px;
-    }
-    .timeline-content img {
-        height: 185px;
+        height: 262px;
+        margin-bottom: 22px;
     }
     .timeline-content h2 {
         font-size: 30px;
-        margin-bottom: 15px;
+        margin-bottom: 12px;
     }
     .timeline-content p {
-        font-size: 16px;
+        font-size: 21px;
+    }
+}
+@media (max-width: 1400px) {
+    .conquests-quote {
+        font-size: 72px;
+    }
+    .conquests-hero {
+        margin-bottom: 59px;
+        padding: 56px 20px 41px;
+    }
+    .conquests-hero h1 {
+        font-size: 83px;
+        letter-spacing: 2.7px;
+    }
+    .subtitle {
+        font-size: 19px;
+    }
+    .timeline-item {
+        padding: 28px 28px;
+    }
+    .timeline-item::before {
+        top: 30px;
+    }
+    .timeline-content {
+        padding: 22px;
+    }
+    .timeline-content img {
+        height: 229px;
+        margin-bottom: 19px;
+    }
+    .timeline-content h2 {
+        font-size: 27px;
+        margin-bottom: 10px;
+    }
+    .timeline-content p {
+        font-size: 19px;
     }
 }
 @media (max-width: 1200px) {
     .conquests-quote {
-    font-size: 70px;
+        font-size: 62px;
     }
     .conquests-hero {
-        margin-bottom: 180px;
+        margin-bottom: 51px;
+        padding: 50px 20px 37px;
     }
     .conquests-hero h1 {
-    font-size: 80px;
+        font-size: 72px;
+        letter-spacing: 2.4px;
     }
     .subtitle {
         font-size: 18px;
     }
+    .timeline-item {
+        padding: 25px 25px;
+    }
+    .timeline-item::before {
+        top: 28px;
+    }
     .timeline-content {
         padding: 20px;
-        border-radius: 8px;
     }
     .timeline-content img {
-        height: 160px;
-        margin-bottom: 15px;
-        border-radius: 5px;
+        height: 196px;
+        margin-bottom: 16px;
     }
     .timeline-content h2 {
-        font-size: 26px;
-        margin-bottom: 10px;
+        font-size: 24px;
+        margin-bottom: 9px;
     }
     .timeline-content p {
-        font-size: 14px;
+        font-size: 18px;
     }
 }
 @media (max-width: 1000px) {
     .conquests-quote {
-    font-size: 60px;
+        font-size: 51px;
     }
     .conquests-hero {
-        margin-bottom: 150px;
+        margin-bottom: 43px;
+        padding: 44px 20px 33px;
     }
     .conquests-hero h1 {
-    font-size: 60px;
-    letter-spacing: 4px;
+        font-size: 60px;
+        letter-spacing: 2.1px;
     }
     .subtitle {
-        font-size: 15px;
-        letter-spacing: 2px;
-        margin-top: 0;
+        font-size: 16px;
     }
     .timeline-item {
-        padding: 40px;
+        padding: 22px 22px;
+    }
+    .timeline-item::before {
+        top: 25px;
     }
     .timeline-content {
         padding: 18px;
     }
     .timeline-content img {
-        height: 128px;
-        margin-bottom: 10px;
+        height: 162px;
+        margin-bottom: 13px;
     }
     .timeline-content h2 {
-        font-size: 20px;
+        font-size: 21px;
+        margin-bottom: 8px;
     }
     .timeline-content p {
-        font-size: 12px;
-        line-height: 1.2;
+        font-size: 16px;
     }
 }
 @media (max-width: 900px) {
+    .conquests-quote {
+        font-size: 46px;
+    }
+    .conquests-hero {
+        margin-bottom: 39px;
+        padding: 42px 20px 32px;
+    }
+    .conquests-hero h1 {
+        font-size: 55px;
+        letter-spacing: 1.9px;
+    }
+    .subtitle {
+        font-size: 15px;
+    }
     .timeline {
-        width: 85%;
+        width: 92%;
+    }
+    .timeline-item, .timeline-item.left, .timeline-item.right {
+        width: 100%;
+        left: 0;
+        text-align: left;
+        padding: 21px 0 21px 26px;
+    }
+    .timeline-item.left::before, .timeline-item.right::before {
+        left: 0;
+        right: auto;
+    }
+    .timeline-item::before {
+        top: 24px;
+    }
+    .timeline-content {
+        padding: 16px;
+    }
+    .timeline-content img {
+        height: 145px;
+        margin-bottom: 11px;
+    }
+    .timeline-content h2 {
+        font-size: 19px;
+        margin-bottom: 7px;
     }
     .timeline-content p {
-        font-size: 11px;
-        line-height: 1.3;
+        font-size: 15px;
     }
 }
 @media (max-width: 800px) {
     .conquests-quote {
-        font-size: 40px;
-        letter-spacing: 2.5px;
+        font-size: 41px;
     }
     .conquests-hero {
-        margin-bottom: 100px;
-        padding: 80px 20px 80px;
+        margin-bottom: 35px;
+        padding: 39px 20px 30px;
     }
     .conquests-hero h1 {
-        font-size: 50px;
-        letter-spacing: 3px;
+        font-size: 49px;
+        letter-spacing: 1.8px;
     }
     .subtitle {
-        font-size: 13px;
-        letter-spacing: 1.5px;
+        font-size: 14px;
+    }
+    .timeline {
+        width: 92%;
+    }
+    .timeline-item, .timeline-item.left, .timeline-item.right {
+        width: 100%;
+        left: 0;
+        text-align: left;
+        padding: 19px 0 19px 26px;
+    }
+    .timeline-item.left::before, .timeline-item.right::before {
+        left: 0;
+        right: auto;
+    }
+    .timeline-item::before {
+        top: 23px;
     }
     .timeline-content {
         padding: 15px;
-        border-radius: 5px;
     }
     .timeline-content img {
-        height: 105px;
-        margin-bottom: 5px;
-        border-radius: 4px;
+        height: 129px;
+        margin-bottom: 10px;
     }
     .timeline-content h2 {
-        font-size: 16px;
-        margin-bottom: 5px;
+        font-size: 17px;
+        margin-bottom: 6px;
     }
     .timeline-content p {
-        font-size: 10px;
-        line-height: 1.2;
+        font-size: 14px;
     }
 }
 @media (max-width: 700px) {
-    .timeline-content {
-        padding: 13px;
+    .conquests-quote {
+        font-size: 36px;
     }
-    .timeline-content img {
-        height: 86px;
+    .conquests-hero {
+        margin-bottom: 31px;
+        padding: 36px 20px 28px;
     }
-    .timeline-content h2 {
+    .conquests-hero h1 {
+        font-size: 43px;
+        letter-spacing: 1.6px;
+    }
+    .subtitle {
         font-size: 13px;
     }
+    .timeline {
+        width: 92%;
+    }
+    .timeline-item, .timeline-item.left, .timeline-item.right {
+        width: 100%;
+        left: 0;
+        text-align: left;
+        padding: 18px 0 18px 26px;
+    }
+    .timeline-item.left::before, .timeline-item.right::before {
+        left: 0;
+        right: auto;
+    }
+    .timeline-item::before {
+        top: 21px;
+    }
+    .timeline-content {
+        padding: 14px;
+    }
+    .timeline-content img {
+        height: 112px;
+        margin-bottom: 8px;
+    }
+    .timeline-content h2 {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
     .timeline-content p {
-        font-size: 8px;
+        font-size: 13px;
     }
 }
 @media (max-width: 600px) {
     .conquests-quote {
-        font-size: 30px;
+        font-size: 31px;
     }
     .conquests-hero {
-        margin-bottom: 50px;
+        margin-bottom: 27px;
+        padding: 33px 20px 26px;
     }
     .conquests-hero h1 {
-    font-size: 45px;
+        font-size: 37px;
+        letter-spacing: 1.5px;
+    }
+    .subtitle {
+        font-size: 13px;
+    }
+    .timeline {
+        width: 92%;
+    }
+    .timeline-item, .timeline-item.left, .timeline-item.right {
+        width: 100%;
+        left: 0;
+        text-align: left;
+        padding: 16px 0 16px 26px;
+    }
+    .timeline-item.left::before, .timeline-item.right::before {
+        left: 0;
+        right: auto;
+    }
+    .timeline-item::before {
+        top: 20px;
+    }
+    .timeline-content {
+        padding: 13px;
+    }
+    .timeline-content img {
+        height: 95px;
+        margin-bottom: 7px;
+    }
+    .timeline-content h2 {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .timeline-content p {
+        font-size: 13px;
+    }
+}
+@media (max-width: 500px) {
+    .conquests-quote {
+        font-size: 25px;
+    }
+    .conquests-hero {
+        margin-bottom: 23px;
+        padding: 30px 20px 24px;
+    }
+    .conquests-hero h1 {
+        font-size: 32px;
+        letter-spacing: 1.3px;
     }
     .subtitle {
         font-size: 12px;
-        letter-spacing: 1.3px;
     }
     .timeline {
-        width: 88%;
+        width: 92%;
     }
-    .timeline-item {
-        padding: 40px 30px;
+    .timeline-item, .timeline-item.left, .timeline-item.right {
+        width: 100%;
+        left: 0;
+        text-align: left;
+        padding: 15px 0 15px 26px;
+    }
+    .timeline-item.left::before, .timeline-item.right::before {
+        left: 0;
+        right: auto;
+    }
+    .timeline-item::before {
+        top: 19px;
+    }
+    .timeline-content {
+        padding: 12px;
+    }
+    .timeline-content img {
+        height: 78px;
+        margin-bottom: 5px;
+    }
+    .timeline-content h2 {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+    .timeline-content p {
+        font-size: 12px;
+    }
+}
+@media (max-width: 400px) {
+    .conquests-quote {
+        font-size: 20px;
+    }
+    .conquests-hero {
+        margin-bottom: 19px;
+        padding: 27px 20px 22px;
+    }
+    .conquests-hero h1 {
+        font-size: 26px;
+        letter-spacing: 1.2px;
+    }
+    .subtitle {
+        font-size: 11px;
+    }
+    .timeline {
+        width: 92%;
+    }
+    .timeline-item, .timeline-item.left, .timeline-item.right {
+        width: 100%;
+        left: 0;
+        text-align: left;
+        padding: 13px 0 13px 26px;
+    }
+    .timeline-item.left::before, .timeline-item.right::before {
+        left: 0;
+        right: auto;
+    }
+    .timeline-item::before {
+        top: 17px;
+    }
+    .timeline-content {
+        padding: 11px;
+    }
+    .timeline-content img {
+        height: 62px;
+        margin-bottom: 4px;
+    }
+    .timeline-content h2 {
+        font-size: 11px;
+        margin-bottom: 4px;
+    }
+    .timeline-content p {
+        font-size: 11px;
+    }
+}
+@media (max-width: 350px) {
+    .conquests-quote {
+        font-size: 18px;
+    }
+    .conquests-hero {
+        margin-bottom: 17px;
+        padding: 25px 20px 21px;
+    }
+    .conquests-hero h1 {
+        font-size: 23px;
+        letter-spacing: 1.1px;
+    }
+    .subtitle {
+        font-size: 10px;
+    }
+    .timeline {
+        width: 92%;
+    }
+    .timeline-item, .timeline-item.left, .timeline-item.right {
+        width: 100%;
+        left: 0;
+        text-align: left;
+        padding: 13px 0 13px 26px;
+    }
+    .timeline-item.left::before, .timeline-item.right::before {
+        left: 0;
+        right: auto;
+    }
+    .timeline-item::before {
+        top: 17px;
+    }
+    .timeline-content {
+        padding: 11px;
+    }
+    .timeline-content img {
+        height: 53px;
+        margin-bottom: 3px;
+    }
+    .timeline-content h2 {
+        font-size: 10px;
+        margin-bottom: 3px;
+    }
+    .timeline-content p {
+        font-size: 10px;
+    }
+}
+@media (max-width: 300px) {
+    .conquests-quote {
+        font-size: 15px;
+    }
+    .conquests-hero {
+        margin-bottom: 15px;
+        padding: 24px 20px 20px;
+    }
+    .conquests-hero h1 {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    .subtitle {
+        font-size: 10px;
+    }
+    .timeline {
+        width: 92%;
+    }
+    .timeline-item, .timeline-item.left, .timeline-item.right {
+        width: 100%;
+        left: 0;
+        text-align: left;
+        padding: 12px 0 12px 26px;
+    }
+    .timeline-item.left::before, .timeline-item.right::before {
+        left: 0;
+        right: auto;
+    }
+    .timeline-item::before {
+        top: 16px;
     }
     .timeline-content {
         padding: 10px;
     }
     .timeline-content img {
-        height: 85px;
-    }
-    .timeline-content h2 {
-        font-size: 10px;
-    }
-    .timeline-content p {
-        font-size: 7px;
-    }
-}
-@media (max-width: 500px) {
-    .conquests-hero {
-        margin-bottom: 40px;
-        padding: 50px 20px;
-    }
-    .conquests-hero h1 {
-    font-size: 35px;
-    letter-spacing: 2px;
-    }
-    .subtitle {
-        font-size: 10px;
-        letter-spacing: 1px;
-    }
-    .timeline {
-        width: 90%;
-    }
-    .timeline-content {
-        padding: 8px;
-    }
-    .timeline-content img {
-        height: 68px;
-        margin-bottom: 3px;
+        height: 45px;
+        margin-bottom: 2px;
     }
     .timeline-content h2 {
         font-size: 9px;
         margin-bottom: 3px;
     }
     .timeline-content p {
-        font-size: 6px;
-        line-height: 1.1;
+        font-size: 10px;
     }
 }
-@media (max-width: 400px) {
-    .conquests-quote {
-    font-size: 20px;
-    letter-spacing: 2px;
-    }
-    .conquests-hero {
-        margin-bottom: 30px;
-        padding: 40px 20px;
-    }
-    .conquests-hero h1 {
-    font-size: 25px;
-    letter-spacing: 1.5px;
-    }
-    .subtitle {
-        font-size: 8px;
-    }
-    .timeline-item {
-        padding: 40px 20px;
-    }
-    .timeline-content {
-        padding: 5px;
-        border-radius: 2px;
-    }
-    .timeline-content img {
-        height: 62px;
-        margin-bottom: 0px;
-        border-radius: 2px;
-    }
-    .timeline-content h2 {
-        font-size: 7px;
-        margin-bottom: 2px;
-    }
-    .timeline-content p {
-        font-size: 5px;
-        line-height: 1;
-    }
-}
-@media (max-width: 350px) {
-    .timeline-content img {
-        height: 50px;
-    }
-    .timeline-content p {
-        font-size: 4px;
-    }
-}
-@media (max-width: 300px) {
-    .conquests-quote {
-    font-size: 16px;
-    }
-    .conquests-hero {
-        margin-bottom: 15px;
-        padding: 30px 20px;
-    }
-    .conquests-hero h1 {
-    font-size: 22px;
-    letter-spacing: 1.2px;
-    }
-    .subtitle {
-        font-size: 6px;
-    }
-    .timeline-content img {
-        height: 40px;
-    }
-    .timeline-content h2 {
-        font-size: 6px;
-    }
-    .timeline-content p {
-        font-size: 3.5px;
-    }
-}
+

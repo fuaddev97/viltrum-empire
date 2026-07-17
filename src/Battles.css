@@ -36,10 +36,11 @@
     z-index: 2;
 }
 .battles-quote {
-    font-size: 64px;
+    font-size: 165px;
     letter-spacing: 3px;
     color: #ffffffaf;
-    max-width: 800px;
+    width: 80%;
+    max-width: 1600px;
     line-height: 1.2;
     text-shadow: 0 0 10px rgba(0,0,0,0.8), 0 0 25px rgba(0,0,0,0.6), 0 0 40px rgba(0,0,0,0.5);
     transition: transform 1.0s ease;
@@ -120,453 +121,629 @@
 }
 @media (max-width: 2900px) {
     .battles-quote {
-        max-width: 1900px;
+        width: 80%;
+        max-width: 1500px;
         font-size: 150px;
     }
     .battles-overlay p {
-        font-size: 35px;
+        font-size: 36px;
         letter-spacing: 3px;
     }
     .battle-timeline {
         width: 90%;
-        margin: 200px auto 0;
+        margin: 140px auto 0;
     }
     .battle-entry {
-        margin: 250px 0px;
+        margin: 70px 0;
+        gap: 30px;
     }
     .battle-video {
-        width: 900px;
-        height: 550px;
-        border-radius: 15px;
+        width: 760px;
+        height: 480px;
+        max-width: 92%;
     }
     .play-button {
-        font-size: 100px;
-        padding: 15px 35px;
+        font-size: 90px;
+        padding: 14px 32px;
     }
     .battle-info {
-        width: 50%;
-        padding: 50px;
+        padding: 42px;
+        width: 42%;
     }
-    .battle-info::before {    
-        left: 45px;
-        width: 250px;
-        height: 5px;
+    .battle-info::before {
+        left: 42px;
+        width: 220px;
+        height: 4.5px;
     }
     .battle-tag {
-        font-size: 35px;
+        font-size: 34px;
     }
     .battle-info h2 {
-        font-size: 45px;
-        margin-bottom: 15px;
+        font-size: 42px;
+        margin-bottom: 14px;
     }
     .battle-info p {
-        font-size: 32px;
-        line-height: 1.2;
+        font-size: 30px;
     }
 }
 @media (max-width: 2500px) {
     .battles-quote {
-        font-size: 140px;
+        width: 80%;
+        max-width: 1315px;
+        font-size: 130px;
     }
     .battles-overlay p {
-        font-size: 33px;
+        font-size: 32px;
+        letter-spacing: 2.7px;
+    }
+    .battle-timeline {
+        width: 90%;
+        margin: 121px auto 0;
+    }
+    .battle-entry {
+        margin: 62px 0;
+        gap: 30px;
     }
     .battle-video {
-        width: 800px;
-        height: 500px;
+        width: 664px;
+        height: 420px;
+        max-width: 92%;
     }
     .play-button {
-        font-size: 80px;
+        font-size: 78px;
+        padding: 12px 28px;
     }
     .battle-info {
-        padding: 35px 50px;
+        padding: 37px;
+        width: 42%;
+    }
+    .battle-info::before {
+        left: 37px;
+        width: 192px;
+        height: 4px;
     }
     .battle-tag {
-        font-size: 33px;
+        font-size: 30px;
     }
     .battle-info h2 {
-        font-size: 42px;
+        font-size: 37px;
+        margin-bottom: 12px;
     }
     .battle-info p {
-        font-size: 28px;
-        line-height: 1.3;
+        font-size: 27px;
     }
 }
 @media (max-width: 2200px) {
     .battles-quote {
-        font-size: 124px;
+        width: 80%;
+        max-width: 1176px;
+        font-size: 115px;
     }
     .battles-overlay p {
-        font-size: 30px;
+        font-size: 29px;
+        letter-spacing: 2.5px;
+    }
+    .battle-timeline {
+        width: 90%;
+        margin: 107px auto 0;
+    }
+    .battle-entry {
+        margin: 55px 0;
+        gap: 30px;
     }
     .battle-video {
-        width: 700px;
-        height: 465px;
+        width: 593px;
+        height: 376px;
+        max-width: 92%;
     }
     .play-button {
         font-size: 70px;
-        padding: 10px 30px;
+        padding: 11px 25px;
     }
     .battle-info {
-        padding: 35px 45px;
+        padding: 33px;
+        width: 42%;
     }
-    .battle-info::before {    
-        width: 225px;
+    .battle-info::before {
+        left: 33px;
+        width: 171px;
+        height: 3.6px;
     }
     .battle-tag {
-        font-size: 30px;
+        font-size: 27px;
     }
     .battle-info h2 {
-        font-size: 38px;
+        font-size: 33px;
+        margin-bottom: 11px;
     }
     .battle-info p {
-        font-size: 26px;
+        font-size: 25px;
     }
 }
 @media (max-width: 2000px) {
-    .battles-heading {
-        height: auto;
-    }
     .battles-quote {
-        max-width: 1200px;
-        font-size: 114px;
+        width: 80%;
+        max-width: 1084px;
+        font-size: 105px;
     }
     .battles-overlay p {
-        font-size: 27px;
-        letter-spacing: 2.8px;
+        font-size: 28px;
+        letter-spacing: 2.3px;
+    }
+    .battle-timeline {
+        width: 90%;
+        margin: 98px auto 0;
     }
     .battle-entry {
-        margin: 250px 0px;
+        margin: 51px 0;
+        gap: 30px;
     }
     .battle-video {
-        width: 600px;
-        height: 390px;
+        width: 545px;
+        height: 346px;
+        max-width: 92%;
     }
     .play-button {
-        font-size: 60px;
+        font-size: 64px;
+        padding: 10px 24px;
     }
     .battle-info {
-        padding: 30px 45px 35px;
+        padding: 31px;
+        width: 42%;
     }
-    .battle-info::before {    
-        width: 200px;
-        height: 4px;
+    .battle-info::before {
+        left: 31px;
+        width: 156px;
+        height: 3.3px;
     }
     .battle-tag {
-        font-size: 28px;
+        font-size: 25px;
     }
     .battle-info h2 {
-        font-size: 34px;
-        margin-bottom: 13px;
+        font-size: 31px;
+        margin-bottom: 10px;
     }
     .battle-info p {
         font-size: 23px;
-        line-height: 1.3;
     }
 }
 @media (max-width: 1800px) {
     .battles-quote {
-        font-size: 100px;
+        width: 80%;
+        max-width: 991px;
+        font-size: 95px;
     }
     .battles-overlay p {
-        font-size: 25px;
+        font-size: 26px;
+        letter-spacing: 2.1px;
+    }
+    .battle-timeline {
+        width: 90%;
+        margin: 88px auto 0;
+    }
+    .battle-entry {
+        margin: 47px 0;
+        gap: 30px;
     }
     .battle-video {
-        width: 550px;
-        height: 350px;
-        border-radius: 12px;
+        width: 497px;
+        height: 316px;
+        max-width: 92%;
     }
     .play-button {
-        font-size: 50px;
-        padding: 8px 25px;
+        font-size: 58px;
+        padding: 9px 22px;
+    }
+    .battle-info {
+        padding: 28px;
+        width: 42%;
+    }
+    .battle-info::before {
+        left: 28px;
+        width: 142px;
+        height: 3.1px;
     }
     .battle-tag {
-        font-size: 26px;
+        font-size: 23px;
     }
     .battle-info h2 {
-        font-size: 30px;
-        margin-bottom: 12px;
+        font-size: 28px;
+        margin-bottom: 9px;
+    }
+    .battle-info p {
+        font-size: 21px;
+    }
+}
+@media (max-width: 1600px) {
+    .battles-quote {
+        width: 80%;
+        max-width: 898px;
+        font-size: 85px;
+    }
+    .battles-overlay p {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+    .battle-timeline {
+        width: 90%;
+        margin: 79px auto 0;
+    }
+    .battle-entry {
+        margin: 42px 0;
+        gap: 30px;
+    }
+    .battle-video {
+        width: 449px;
+        height: 286px;
+        max-width: 92%;
+    }
+    .play-button {
+        font-size: 52px;
+        padding: 8px 20px;
+    }
+    .battle-info {
+        padding: 26px;
+        width: 42%;
+    }
+    .battle-info::before {
+        left: 26px;
+        width: 128px;
+        height: 2.8px;
+    }
+    .battle-tag {
+        font-size: 21px;
+    }
+    .battle-info h2 {
+        font-size: 26px;
+        margin-bottom: 8px;
     }
     .battle-info p {
         font-size: 20px;
     }
 }
-@media (max-width: 1600px) {
-    .battles-quote {
-        max-width: 1000px;
-        font-size: 90px;
-    }
-    .battles-overlay p {
-        font-size: 23px;
-    }
-    .battle-timeline {
-        width: 90%;
-        margin: 200px auto 0;
-    }
-    .battle-entry {
-        margin: 250px 0px;
-    }
-    .battle-video {
-        width: 480px;
-        height: 320px;
-    }
-    .play-button {
-        font-size: 45px;
-        padding: 10px 25px;
-    }
-    .battle-info {
-        padding: 30px 40px 35px;
-    }
-    .battle-info::before {    
-        left: 40px;
-        height: 3px;
-    }
-    .battle-tag {
-        font-size: 24px;
-    }
-    .battle-info h2 {
-        font-size: 26px;
-        margin-bottom: 10px;
-    }
-    .battle-info p {
-        font-size: 18px;
-    }
-}
 @media (max-width: 1400px) {
     .battles-quote {
-        max-width: 800px;
+        width: 80%;
+        max-width: 806px;
         font-size: 75px;
     }
     .battles-overlay p {
-        font-size: 18px;
+        font-size: 22px;
+        letter-spacing: 1.8px;
+    }
+    .battle-timeline {
+        width: 90%;
+        margin: 69px auto 0;
     }
     .battle-entry {
-        margin: 200px 0px;
+        margin: 38px 0;
+        gap: 30px;
     }
     .battle-video {
-        width: 430px;
-        height: 280px;
+        width: 401px;
+        height: 256px;
+        max-width: 92%;
     }
     .play-button {
-        font-size: 40px;
+        font-size: 46px;
+        padding: 7px 18px;
     }
     .battle-info {
-        padding: 20px 35px 25px;
+        padding: 23px;
+        width: 42%;
     }
-    .battle-info::before {    
-        left: 35px;
+    .battle-info::before {
+        left: 23px;
+        width: 114px;
+        height: 2.6px;
     }
     .battle-tag {
-        font-size: 22px;
+        font-size: 19px;
     }
     .battle-info h2 {
-        font-size: 22px;
+        font-size: 23px;
+        margin-bottom: 8px;
     }
     .battle-info p {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 @media (max-width: 1200px) {
     .battles-quote {
-        max-width: 700px;
-        font-size:65px;
+        width: 80%;
+        max-width: 713px;
+        font-size: 65px;
     }
     .battles-overlay p {
-        font-size: 16px;
+        font-size: 20px;
+        letter-spacing: 1.7px;
+    }
+    .battle-timeline {
+        width: 90%;
+        margin: 60px auto 0;
+    }
+    .battle-entry {
+        margin: 34px 0;
+        gap: 30px;
     }
     .battle-video {
-        width: 350px;
-        height: 230px;
+        width: 353px;
+        height: 227px;
+        max-width: 92%;
     }
-    .video-thumbnail img {
-        border-radius: 8px;
+    .play-button {
+        font-size: 41px;
+        padding: 6px 16px;
+    }
+    .battle-info {
+        padding: 21px;
+        width: 42%;
+    }
+    .battle-info::before {
+        left: 21px;
+        width: 100px;
+        height: 2.3px;
+    }
+    .battle-tag {
+        font-size: 17px;
+    }
+    .battle-info h2 {
+        font-size: 21px;
+        margin-bottom: 7px;
+    }
+    .battle-info p {
+        font-size: 17px;
+    }
+}
+@media (max-width: 1000px) {
+    .battles-quote {
+        width: 80%;
+        max-width: 621px;
+        font-size: 55px;
+    }
+    .battles-overlay p {
+        font-size: 18px;
+        letter-spacing: 1.5px;
+    }
+    .battle-timeline {
+        width: 90%;
+        margin: 51px auto 0;
+    }
+    .battle-entry {
+        margin: 30px 0;
+        gap: 30px;
+    }
+    .battle-video {
+        width: 305px;
+        height: 197px;
+        max-width: 92%;
     }
     .play-button {
         font-size: 35px;
-        padding: 8px 20px;
+        padding: 5px 14px;
     }
     .battle-info {
-        padding: 12px 35px 25px;
+        padding: 18px;
+        width: 42%;
     }
-    .battle-info::before {    
-        width: 150px;
+    .battle-info::before {
+        left: 18px;
+        width: 86px;
         height: 2px;
     }
     .battle-tag {
-        font-size: 16px;
+        font-size: 15px;
     }
     .battle-info h2 {
         font-size: 18px;
-        margin: 3px 0 8px;
+        margin-bottom: 6px;
+    }
+    .battle-info p {
+        font-size: 15px;
+    }
+}
+@media (max-width: 800px) {
+    .battles-quote {
+        width: 80%;
+        max-width: 528px;
+        font-size: 45px;
+    }
+    .battles-overlay p {
+        font-size: 16px;
+        letter-spacing: 1.4px;
+    }
+    .battle-timeline {
+        width: 90%;
+        margin: 41px auto 0;
+    }
+    .battle-entry {
+        margin: 26px 0;
+        gap: 30px;
+        flex-direction: column;
+    }
+    .battle-entry:nth-child(even) {
+        flex-direction: column;
+    }
+    .battle-video {
+        width: 258px;
+        height: 167px;
+        max-width: 92%;
+    }
+    .play-button {
+        font-size: 29px;
+        padding: 4px 12px;
+    }
+    .battle-info {
+        padding: 16px;
+        width: 90%;
+    }
+    .battle-info::before {
+        left: 16px;
+        width: 72px;
+        height: 1.8px;
+    }
+    .battle-tag {
+        font-size: 13px;
+    }
+    .battle-info h2 {
+        font-size: 16px;
+        margin-bottom: 5px;
     }
     .battle-info p {
         font-size: 14px;
     }
 }
-@media (max-width: 1000px) {
+@media (max-width: 600px) {
     .battles-quote {
-        font-size: 55px;
+        width: 80%;
+        max-width: 436px;
+        font-size: 35px;
     }
     .battles-overlay p {
         font-size: 14px;
-        letter-spacing: 2.5px;
+        letter-spacing: 1.2px;
     }
     .battle-timeline {
-        margin: 150px auto 0;
+        width: 90%;
+        margin: 32px auto 0;
     }
     .battle-entry {
-        margin: 150px 0px;
+        margin: 21px 0;
+        gap: 30px;
+        flex-direction: column;
+    }
+    .battle-entry:nth-child(even) {
+        flex-direction: column;
     }
     .battle-video {
-        height: 225px;
+        width: 210px;
+        height: 137px;
+        max-width: 92%;
     }
     .play-button {
-        font-size: 30px;
-        padding: 5px 15px;
+        font-size: 23px;
+        padding: 3px 10px;
     }
     .battle-info {
-        padding: 12px 25px 20px;
+        padding: 13px;
+        width: 90%;
     }
-    .battle-info::before {    
-        left: 25px;
-        width: 100px;
+    .battle-info::before {
+        left: 13px;
+        width: 58px;
+        height: 1.5px;
     }
     .battle-tag {
-        font-size: 14px;
+        font-size: 11px;
     }
     .battle-info h2 {
-        font-size: 15px;
-        margin-bottom: 5px;
+        font-size: 13px;
+        margin-bottom: 4px;
+    }
+    .battle-info p {
+        font-size: 12px;
+    }
+}
+@media (max-width: 450px) {
+    .battles-quote {
+        width: 80%;
+        max-width: 366px;
+        font-size: 27px;
+    }
+    .battles-overlay p {
+        font-size: 13px;
+        letter-spacing: 1.1px;
+    }
+    .battle-timeline {
+        width: 90%;
+        margin: 25px auto 0;
+    }
+    .battle-entry {
+        margin: 18px 0;
+        gap: 30px;
+        flex-direction: column;
+    }
+    .battle-entry:nth-child(even) {
+        flex-direction: column;
+    }
+    .battle-video {
+        width: 174px;
+        height: 115px;
+        max-width: 92%;
+    }
+    .play-button {
+        font-size: 19px;
+        padding: 2px 9px;
+    }
+    .battle-info {
+        padding: 11px;
+        width: 90%;
+    }
+    .battle-info::before {
+        left: 11px;
+        width: 47px;
+        height: 1.3px;
+    }
+    .battle-tag {
+        font-size: 10px;
+    }
+    .battle-info h2 {
+        font-size: 11px;
+        margin-bottom: 3px;
     }
     .battle-info p {
         font-size: 11px;
     }
 }
-@media (max-width: 800px) {
+@media (max-width: 350px) {
     .battles-quote {
-        font-size: 45px;
+        width: 80%;
+        max-width: 320px;
+        font-size: 22px;
     }
     .battles-overlay p {
         font-size: 12px;
-        letter-spacing: 2.4px;
+        letter-spacing: 1px;
     }
     .battle-timeline {
-        margin: 100px auto 0;
-    }
-    .battle-video {
-        width: 250px;
-        height: 150px;
-    }
-    .play-button {
-        font-size: 25px;
-    }
-    .battle-info {
-        padding: 5px 20px 15px;
-    }
-    .battle-info::before {    
-        left: 20px;
-        width: 80px;
-        height: 1.5px;
-    }
-    .battle-tag {
-        font-size: 12px;
-    }
-    .battle-info h2 {
-        font-size: 12px;
-        margin: 0 0 3px;
-    }
-    .battle-info p {
-        font-size: 9px;
-    }
-}
-@media (max-width: 600px) {
-    .battles-quote {
-        font-size: 30px;
-    }
-    .battles-overlay p {
-        font-size: 7px;
-        letter-spacing: 2.2px;
-    }
-    .battle-video {
-        width: 200px;
-        height: 120px;
-        border-radius: 8px;
-    }
-    .play-button {
-        font-size: 20px;
-        padding: 2px 10px;
-    }
-    .battle-info {
-        padding: 0px 15px 10px;
-    }
-    .battle-info::before {    
-        left: 15px;
-        width: 60px;
-    }
-    .battle-tag {
-        font-size: 9px;
-    }
-    .battle-info h2 {
-        font-size: 8px;
-    }
-    .battle-info p {
-        font-size: 7px;
-        line-height: 1.2;
-    }
-}
-@media (max-width: 450px) {
-    .battles-quote {
-        font-size: 23px;
-        letter-spacing: 2.2px;
-    }
-    .battles-overlay p {
-        font-size: 5px;
-        letter-spacing: 1.6px;
+        width: 90%;
+        margin: 20px auto 0;
     }
     .battle-entry {
-        margin: 125px 0px;
+        margin: 16px 0;
+        gap: 30px;
+        flex-direction: column;
+    }
+    .battle-entry:nth-child(even) {
+        flex-direction: column;
     }
     .battle-video {
-        width: 140px;
-        height: 90px;
-    }
-    .video-thumbnail img {
-        border-radius: 5px;
+        width: 150px;
+        height: 100px;
+        max-width: 92%;
     }
     .play-button {
-        font-size: 15px;
-        padding: 0px 6px;
+        font-size: 16px;
+        padding: 2px 8px;
     }
     .battle-info {
-        padding: 0px 10px 10px;
-        border-radius: 5px;
+        padding: 10px;
+        width: 90%;
     }
-    .battle-info::before {    
+    .battle-info::before {
         left: 10px;
-        width: 50px;
+        width: 40px;
         height: 1.2px;
     }
     .battle-tag {
-        font-size: 6px;
+        font-size: 9px;
     }
     .battle-info h2 {
-        font-size: 6px;
-        margin: 0 0 2px;
+        font-size: 10px;
+        margin-bottom: 3px;
     }
     .battle-info p {
-        font-size: 5px;
+        font-size: 10px;
     }
 }
-@media (max-width: 350px) {
-    .battles-quote {
-        font-size: 18px;
-        letter-spacing: 1.6px;
-    }
-    .battles-overlay p {
-        font-size: 4px;
-        letter-spacing: 1.4px;
-    }
-    .battle-info p {
-        font-size: 4px;
-    }
-}
+
